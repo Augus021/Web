@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TechStore</title>
+    <style>
+        body{
+            background-color: rgb(227, 233, 233);
+        }
+            header{
+        background-color: #ffd700;
+        display: flex;
+        flex-direction: row;  
+        justify-content: center;
+        align-items: center;
+        padding: 25px;
+        margin: 1px;
+        gap: 25px;
+        font-size: 22px;
+        font-weight: bold;
+        font-family: Arial, Helvetica, sans-serif;
+        border-radius: 8px;
+        text-decoration: none;
+        }
+
+
+        main {
+            justify-content: left;
+            width: 2035px;
+            height: 150%;
+            background-color: rgb(255, 255, 255);
+            border-radius: 8px;
+            box-shadow: 0 0 15px gray;
+            margin-top: 30px;
+            padding: 30px;
+        }
+
+        footer {
+        margin-top: 30px;
+        background-color: black;
+        padding: 40px 20px; 
+        color: #fff;
+        border-radius: 8px;
+        }
+
+        .soporte input{
+        display: flex;
+        flex-direction: column;
+        border-radius: 5px;
+        width: 200px;
+        height: 30px;
+        margin-top: 10px;
+        margin-bottom: 15px;
+        }
+
+        .soporte{
+            background-color: rgba(128, 128, 128, 0.315);
+            padding: 10px 10px;
+            margin-right: 75%;
+            border-radius: 6px;
+            margin-top: 15px;
+            margin-bottom: 45px;
+        }
+
+        .soporte select, button, label{
+        display: flex;
+        flex-direction: column;
+        border-radius: 5px;
+        width: 200px; 
+        height: 30px;
+        margin-top: 15px;
+        margin-bottom: 15px;
+        justify-content: center;
+        }
+
+        .soporte textarea{
+        width: 430px;
+        height: 180px;
+        border-radius: 5px;
+        margin-top: 10px;
+        }
+
+        .soporte button:hover{
+        transform: scale(1,1.2);
+        background-color: #ffd700;
+        cursor:pointer;
+        }
+
+
+        /* estilo del detalle de productos*/
+        .detalle-prod {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 40px;
+        padding: 30px;
+        flex-wrap: wrap; 
+        }
+
+        .detalle-prod img{
+        width: 100px;
+        }
+
+        .prod-nombre h2{
+            font-size: 40px;
+            font-family: Arial, Helvetica, sans-serif;
+            align-items: center;
+        }
+
+        .parr-prod h2{
+            font-size: 20px; 
+            margin: 10px 0;
+        }
+
+        .h3-prod{
+            color: rgb(48, 201, 155);
+            font-size: 35px;
+        }
+
+        .btn-prod{
+            padding: 10px 20px; 
+            background-color: #ffd700; 
+            border: none; 
+            border-radius: 5px; 
+            font-weight: bold; 
+            cursor: pointer; 
+            width:200px; 
+            height: 60px; 
+            font-size: 15px;
+        }
+
+        .btn-prod:hover{
+            background-color: rgb(48, 201, 155);
+            color: rgb(255, 255, 255);
+        }
+
+
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>TechStore</h1>
+        
+    </header>
+
+    <h4 class="retorno"><a href="index.html"> ⪡ Volver a la pagina principal</a></h4>
+
+    <main id="detalle">
+        
+    </main>
+
+
+   <footer id="footer">
+        <h3>SOBRE NOSOTROS</h3>
+        <p> Nuestra tienda es un espacio especializado en la comercialización 
+            de aparatos electrónicos de última generación, enfocada principalmente
+            en ofrecer una amplia variedad de celulares, smartwatches, teclados y
+            auriculares de las marcas más reconocidas del mercado.
+              
+            Nos destacamos por brindar a nuestros clientes productos de alta calidad,
+            originales y con garantía, además de un servicio de atención personalizado
+            que los asesora para encontrar el dispositivo que mejor se adapte a sus necesidades.
+            Nuestro objetivo es combinar tecnología, innovación y confianza, garantizando
+            una experiencia de compra cómoda, segura y moderna, tanto en tienda física como
+            en línea. En nuestro catálogo encontrarás desde los modelos más recientes de smartphones
+            y relojes inteligentes hasta accesorios que mejoran tu productividad y conectividad diaria. <br><br></p>
+
+
+            <div class="soporte">
+            <h3>SOPORTE</h3>
+            <p>Has tenido algun problema con nuestra pagina? <br>Envianos tu inconveniente y te ayudaremos a resolverlo:
+
+            <form>    
+            <input type="text" id="nombre" name="nombre" placeholder="Nombre completo" required>
+            <input type="email"  id="email"  name="email" placeholder="Correo electronico" required>
+
+            <label for="tema">De que se trata el problema?</label>
+            <select id="tema" name="tema" required> 
+                <option value="">Seleccione una opcion...</option>
+                <option value="cuenta">Problemas con la cuenta</option>
+                <option value="pago">Problemas con el pago</option>
+                <option value="bug">Error o bug en la pagina</option>
+                <option value="otro">Otro</option>
+            </select>
+
+            <textarea id="mensaje" name="mensaje" rows="5" placeholder="Describi tu problema aqui..." required></textarea>
+            <button>Enviar informe</button>
+            </form>
+
+            </div>
+         <p>&copy; 2025 TechStore - Todos los derechos reservados</p>
+    </footer>
+    
+        <script src="script.js"></script>
+
+</body>
+
+</html>

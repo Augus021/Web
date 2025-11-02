@@ -1,0 +1,44 @@
+[
+{
+    "id": 1,
+    "nombre": "Xiaomi Redmi 14C",
+    "precio": 659999,
+    "imagen": "https://http2.mlstatic.com/D_NQ_NP_2X_631790-MLA94915816150_102025-F.webp",
+    "descripcion": "El Xiaomi Redmi 14C cuenta con una pantalla de 6,88 HD+ y 120Hz, ideal para uso diario fluido. Funciona con MediaTek Helio G81, hasta 8 GB de RAM y 256 GB de almacenamiento, ampliable con microSD. Su cámara trasera es de 50 MP y la frontal de 13 MP, ofreciendo fotos nítidas. La batería de 5.160 mAh soporta carga rápida de 18 W, asegurando larga duración. Viene con lector de huellas lateral, entrada de auriculares y HyperOS basado en Android 14. Con un diseño de 8,22 mm de grosor y peso cercano a 210 g, es una opción sólida en gama de entrada/media, combinando buen rendimiento, batería y pantalla grande."
+}, 
+{
+    "id": 2,
+    "nombre": "Samsung Galaxy A06",
+    "precio": 879999,
+    "imagen": "https://http2.mlstatic.com/D_NQ_NP_2X_614766-MLA90658950783_082025-F.webp",
+    "descripcion": "El Samsung Galaxy A06 ofrece una pantalla de 6,7 HD+ (720×1600) LCD, ideal para consumo diario. Funciona con el procesador MediaTek Helio G85, acompañado de hasta 6 GB de RAM y 128 GB de almacenamiento ampliable. Incluye cámara trasera de 50 MP + 2 MP, cámara frontal de 8 MP, y una batería de 5.000 mAh con carga rápida de 25 W. Viene con Android 14 y la interfaz One UI, lector de huellas lateral y diseño ergonómico (~189 g de peso). Una opción asequible de gama de entrada con buen equilibrio de batería, almacenamiento y cámara para el uso diario."
+},
+{
+    "id": 3,
+    "nombre": "Motorola Moto E15", 
+    "precio": 714999,
+    "imagen": "https://http2.mlstatic.com/D_NQ_NP_2X_690774-MLA90131913221_082025-F.webp",
+    "descripcion": "El Motorola Moto E15 cuenta con pantalla de 6,67″ HD+ a 90 Hz, procesador MediaTek Helio G81 Extreme, hasta 2 GB de RAM y 64 GB de almacenamiento (ampliable vía microSD). Su cámara trasera principal es de 32 MP (f/2.2) y la frontal de 8 MP, e incluye altavoces estéreo con sonido Dolby Atmos®. La batería es de 5.200 mAh con carga rápida de 18 W, y el sistema operativo es Android 14 Go Edition. Además, cuenta con lector de huellas lateral, diseño con acabado en “cuero vegano” y certificación IP54 para polvo y salpicaduras. Una excelente opción de gama de entrada funcional y con buena autonomía."    
+},
+{
+    "id": 4,
+    "nombre": "Xiaomi Poco C75",
+    "precio": 859999,
+    "imagen": "https://http2.mlstatic.com/D_NQ_NP_2X_678534-MLA94915044156_102025-F.webp",
+    "descripcion": "El Xiaomi Poco C75 tiene pantalla de 6,88 HD+ con 120 Hz y buen brillo. Funciona con MediaTek Helio G81 Ultra, hasta 8 GB de RAM y 256 GB de almacenamiento ampliable vía microSD. Su cámara trasera es de 50 MP + lente auxiliar y la frontal de 13 MP. La batería de 5.160 mAh soporta carga rápida de 18 W. Corre Android 14 con HyperOS, cuenta con lector de huellas lateral, jack de auriculares de 3,5 mm y conector USB‑C. Con 8,22 mm de grosor y 204 g, es una opción moderna de gama media, equilibrando rendimiento, batería y precio."    
+},
+{
+    "id": 5,
+    "nombre": "Samsung Galaxy S21 Ultra",
+    "precio": 1189999,
+    "imagen": "https://http2.mlstatic.com/D_NQ_NP_2X_950192-MLA74242183335_012024-F.webp",
+    "descripcion": "El Samsung Galaxy S21 Ultra cuenta con pantalla Dynamic AMOLED 2X de 6,8 QHD+ con tasa de refresco adaptativa de 10‑120 Hz y protección Gorilla Glass Victus. Tiene cámara trasera cuádruple: 108 MP principal, ultra gran angular de 12 MP y dos teleobjetivos de 10 MP con zoom óptico 3× y 10×, alcanzando hasta 100×. Funciona con hasta 16 GB de RAM y almacenamiento hasta 512 GB, batería de 5.000 mAh, soporte para S Pen y conectividad 5G, WiFi 6E y UWB. Su diseño premium y funciones avanzadas lo hacen ideal para quienes buscan máxima potencia, excelente fotografía y gran experiencia de pantalla."
+},
+{
+     "id": 6,
+    "nombre": "iPhone 16",
+    "precio": 1359999,
+    "imagen": "https://http2.mlstatic.com/D_NQ_NP_2X_719371-MLA95236652597_102025-F.webp",
+    "descripcion": "El iPhone 16 cuenta con pantalla OLED Super Retina XDR de 6,1″ con resolución 2556×1179 px. Funciona con el chip A18, incluye 8 GB de RAM y opciones de almacenamiento de 128 GB, 256 GB y 512 GB. Tiene cámara trasera de 48 MP (Sensor‑Shift OIS) + ultra gran angular de 12 MP, y una cámara frontal de 12 MP. Ofrece resistencia al agua y polvo IP68, puerto USB‑C, conectividad 5G, WiFi 7, y botón de acción personalizado. Con peso de 170 g y un diseño premium en aluminio con vidrio, es una opción sólida para usuarios que buscan rendimiento, cámara y soporte de largo plazo."
+}
+]
