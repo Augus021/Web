@@ -17,10 +17,22 @@
             <input type="text" placeholder="Buscar productos..."> 
             <button>Buscar</button>
         </div>
-        <div>
-            <a href="#"><img class="carrito-logo" src="C:\Users\augus\Downloads\carrito-de-compras.png" alt="CARRITO"></a>
+        <div id="carritoIcono" class="carrito-container">
+        <img class="carrito-logo" src="https://cdn-icons-png.flaticon.com/512/1170/1170678.png" alt="CARRITO">
+        <span id="contadorCarrito">0</span>
         </div>
     </header>
+
+<!-- Carrito de compras -->
+    <div id="carrito" class="carrito">
+  <h2>Tu carrito</h2>
+  <button class="cerrar-carrito"><img src="https://img.icons8.com/?size=100&id=39944&format=png" class="img-cerrar-carrito"></button>
+  <ul id="listaCarrito"></ul>
+  <div class="total">
+    <strong>Total:</strong> $<span id="totalCarrito">0</span>
+  </div>
+  <button id="btnPagar">Pagar</button>
+</div>
 
     <!-- Barra de navegacion -->
     <nav class="navegacion">
@@ -58,7 +70,7 @@
                 </a>
                 <h3>Xiaomi Redmi 14c</h3>
                 <p>$659.999</p>
-                <button>Agregar al Carrito</button>
+                <button class="agregar-carrito">Agregar al Carrito</button>
                 
             </div>
 
@@ -68,7 +80,7 @@
                 </a>
                 <h3>Samsung Galaxy A16</h3>
                 <p>$879.999</p>
-                <button>Agregar al Carrito</button>
+                <button class="agregar-carrito">Agregar al Carrito</button>
             </div>
 
             <div class="producto">
@@ -77,7 +89,7 @@
                 </a>
                 <h3>Motorola Moto E15</h3>
                 <p>$714.999</p>
-                <button>Agregar al Carrito</button>
+                <button class="agregar-carrito">Agregar al Carrito</button>
             </div>
 
             <div class="producto">
@@ -86,7 +98,7 @@
                 </a>
                 <h3>Xiaomi Poco C75</h3>
                 <p>$859.999</p>
-                <button>Agregar al Carrito</button>
+                <button class="agregar-carrito">Agregar al Carrito</button>
             </div>
 
             <div class="producto">
@@ -95,7 +107,7 @@
                 </a>
                 <h3>Samsung Galaxy S21 Ultra</h3>
                 <p>$1.189.999</p>
-                <button>Agregar al Carrito</button>
+                <button class="agregar-carrito">Agregar al Carrito</button>
             </div>
 
             <div class="producto">
@@ -104,7 +116,7 @@
                 </a>
                 <h3>iPhone 16</h3>
                 <p>$1.359.999</p>
-                <button>Agregar al Carrito</button>
+                <button class="agregar-carrito">Agregar al Carrito</button>
             </div>
 
             <div class="separadores-cat" id="SMARTWACHES">
@@ -112,57 +124,57 @@
             </div>
 
             <div class="producto">
-                <a href="">
+                <a href="detalle-productos.html?id=7">
                 <img src="https://http2.mlstatic.com/D_NQ_NP_2X_902109-MLA96720852497_102025-F.webp" alt="Colmi P20 Plus">
                 </a>
                 <h3>Colmi P20 Plus</h3>
                 <p>$29.999</p>
-                <button>Agregar al Carrito</button>
+                <button class="agregar-carrito">Agregar al Carrito</button>
             </div>
 
             <div class="producto">
-                <a href="">
+                <a href="detalle-productos.html?id=8">
                 <img src="https://http2.mlstatic.com/D_NQ_NP_2X_667457-MLA93490912789_092025-F.webp" alt="Haylou Ls09a">
                 </a>
                 <h3>Haylou Ls09a</h3>
                 <p>$59.999</p>
-                <button>Agregar al Carrito</button>
+                <button class="agregar-carrito">Agregar al Carrito</button>
             </div>
 
             <div class="producto">
-                <a href="">
+                <a href="detalle-productos.html?id=9">
                 <img src="https://http2.mlstatic.com/D_NQ_NP_2X_642778-MLA95703190432_102025-F.webp" alt="Smartwatch Jd Capri 1.83">
                 </a>
                 <h3>Smartwatch Jd Capri 1.83</h3>
                 <p>$89.999</p>
-                <button>Agregar al Carrito</button>
+                <button class="agregar-carrito">Agregar al Carrito</button>
             </div>
 
            <div class="producto">
-                <a href="">
+                <a href="detalle-productos.html?id=10">
                 <img src="https://http2.mlstatic.com/D_NQ_NP_2X_873600-MLA95688273686_102025-F.webp" alt="Samsung Galaxy Watch8">
                 </a>
                 <h3>Samsung Galaxy Watch8</h3>
                 <p>$259.999</p>
-                <button>Agregar al Carrito</button>
+                <button class="agregar-carrito">Agregar al Carrito</button>
             </div>
 
            <div class="producto">
-                <a href="">
+                <a href="detalle-productos.html?id=11">
                 <img src="https://http2.mlstatic.com/D_NQ_NP_2X_722358-MLA95679329436_102025-F.webp" alt="Samsung Fit 3">
                 </a>
                 <h3>Samsung Fit 3</h3>
                 <p>$119.999</p>
-                <button>Agregar al Carrito</button>
+                <button class="agregar-carrito">Agregar al Carrito</button>
             </div>
 
             <div class="producto">
-                <a href="">
+                <a href="detalle-productos.html?id=12">
                 <img src="https://http2.mlstatic.com/D_NQ_NP_2X_681309-MLA96101944713_102025-F.webp" alt="Xiaomi Redmi Watch 5 Active">
                 </a>
                 <h3>Xiaomi Redmi Watch 5 Active</h3>
                 <p>$79.999</p>
-                <button>Agregar al Carrito</button>
+                <button class="agregar-carrito">Agregar al Carrito</button>
             </div>
 
             <div class="separadores-cat" id="AURICULARES">
@@ -170,62 +182,57 @@
             </div>
 
             <div class="producto">
-                <a href="">
-                <img src="https://images.samsung.com/is/image/samsung/p6pim/ar/sm-a166mzkfaro/gallery/ar-galaxy-a16-5g-sm-a166-sm-a166mzkfaro-544452906?$Q90_2052_1641_JPG$" alt="Samsung Galaxy A16">
+                <a href="detalle-productos.html?id=13">
+                <img src="https://http2.mlstatic.com/D_NQ_NP_2X_996309-MLA95967152319_102025-F.webp" alt="Auriculares Logitech G435">
                 </a>
-                <h3>Samsung Galaxy A16</h3>
-                <p>Este producto es...</p>
-                <p>$859.999</p>
-                <button>Agregar al Carrito</button>
+                <h3>Auriculares Logitech G435</h3>
+                <p>$159.999</p>
+                <button class="agregar-carrito">Agregar al Carrito</button>
             </div>
 
             <div class="producto">
-                <a href="">
-                <img src="https://images.samsung.com/is/image/samsung/p6pim/ar/sm-a166mzkfaro/gallery/ar-galaxy-a16-5g-sm-a166-sm-a166mzkfaro-544452906?$Q90_2052_1641_JPG$" alt="Samsung Galaxy A16">
+                <a href="detalle-productos.html?id=14">
+                <img src="https://http2.mlstatic.com/D_NQ_NP_2X_664763-MLA95972136310_102025-F.webp" alt="Auriculares Harmony Cloud Gray">
                 </a>
-                <h3>Samsung Galaxy A16</h3>
-                <p>Este producto es...</p>
-                <p>$859.999</p>
-                <button>Agregar al Carrito</button>
+                <h3>Auriculares Harmony Cloud Gray</h3>
+                <p>$73.999</p>
+                <button class="agregar-carrito">Agregar al Carrito</button>
             </div>
 
             <div class="producto">
-                <a href="">
-                <img src="https://images.samsung.com/is/image/samsung/p6pim/ar/sm-a166mzkfaro/gallery/ar-galaxy-a16-5g-sm-a166-sm-a166mzkfaro-544452906?$Q90_2052_1641_JPG$" alt="Samsung Galaxy A16">
+                <a href="detalle-productos.html?id=15">
+                <img src="https://http2.mlstatic.com/D_NQ_NP_2X_945049-MLA96098989651_102025-F.webp" alt="Auriculares Havit Fuxi">
                 </a>
-                <h3>Samsung Galaxy A16</h3>
-                <p>Este producto es...</p>
-                <p>$859.999</p>
-                <button>Agregar al Carrito</button>
+                <h3>Auriculares Havit Fuxi</h3>
+                <p>$34.599</p>
+                <button class="agregar-carrito">Agregar al Carrito</button>
             </div>
 
             <div class="producto">
-                <a href="">
-                <img src="https://images.samsung.com/is/image/samsung/p6pim/ar/sm-a166mzkfaro/gallery/ar-galaxy-a16-5g-sm-a166-sm-a166mzkfaro-544452906?$Q90_2052_1641_JPG$" alt="Samsung Galaxy A16">
+                <a href="detalle-productos.html?id=16">
+                <img src="https://http2.mlstatic.com/D_NQ_NP_2X_642515-MLA95942577131_102025-F.webp" alt="Auriculares Sennheiser 450bt">
                 </a>
-                <h3>Samsung Galaxy A16</h3>
-                <p>Este producto es...</p>
-                <p>$859.999</p>
-                <button>Agregar al Carrito</button>
+                <h3>Auriculares Sennheiser 450bt</h3>
+                <p>$220.999</p>
+                <button class="agregar-carrito">Agregar al Carrito</button>
             </div>
 
             <div class="producto">
-                <a href="">
-                <img src="https://images.samsung.com/is/image/samsung/p6pim/ar/sm-a166mzkfaro/gallery/ar-galaxy-a16-5g-sm-a166-sm-a166mzkfaro-544452906?$Q90_2052_1641_JPG$" alt="Samsung Galaxy A16">
+                <a href="detalle-productos.html?id=17">
+                <img src="https://http2.mlstatic.com/D_NQ_NP_2X_766053-MLA95393486204_102025-F.webp" alt="Auriculares Corsair Virtuoso">
                 </a>
-                <h3>Samsung Galaxy A16</h3>
-                <p>Este producto es...</p>
-                <p>$859.999</p>
-                <button>Agregar al Carrito</button>
+                <h3>Auriculares Corsair Virtuoso</h3>
+                <p>$387.399</p>
+                <button class="agregar-carrito">Agregar al Carrito</button>
             </div>
 
             <div class="producto">
-                <a href="">
-                <img src="https://images.samsung.com/is/image/samsung/p6pim/ar/sm-a166mzkfaro/gallery/ar-galaxy-a16-5g-sm-a166-sm-a166mzkfaro-544452906?$Q90_2052_1641_JPG$" alt="Samsung Galaxy A16">
+                <a href="detalle-productos.html?id=18">
+                <img src="https://http2.mlstatic.com/D_NQ_NP_2X_705463-MLA85508931904_062025-F.webp" alt="Auriculares JBL Tune 760BT">
                 </a>
-                <h3>Samsung Galaxy A16</h3>
-                <p>$859.999</p>
-                <button>Agregar al Carrito</button>
+                <h3>Auriculares JBL Tune 760BT</h3>
+                <p>$119.999</p>
+                <button class="agregar-carrito">Agregar al Carrito</button>
             </div>
 
             <div class="separadores-cat" id="TABLETS">
@@ -233,57 +240,57 @@
             </div>
 
             <div class="producto">
-                <a href="">
+                <a href="detalle-productos.html?id=19">
                 <img src="https://http2.mlstatic.com/D_NQ_NP_2X_636469-MLA96128130403_102025-F.webp" alt="Samsung Galaxy Tab A9">
                 </a>
                 <h3>Samsung Galaxy Tab A9</h3>
                 <p>$229.999</p>
-                <button>Agregar al Carrito</button>
+                <button class="agregar-carrito">Agregar al Carrito</button>
             </div>
 
             <div class="producto">
-                <a href="">
+                <a href="detalle-productos.html?id=20">
                 <img src="https://http2.mlstatic.com/D_NQ_NP_2X_644740-MLA95664593358_102025-F.webp" alt="Xiaomi Redmi Pad">
                 </a>
                 <h3>Xiaomi Redmi Pad</h3>
                 <p>$359.999</p>
-                <button>Agregar al Carrito</button>
+                <button class="agregar-carrito">Agregar al Carrito</button>
             </div>
 
             <div class="producto">
-                <a href="">
+                <a href="detalle-productos.html?id=21">
                 <img src="https://http2.mlstatic.com/D_NQ_NP_2X_706531-MLA96126565125_102025-F.webp" alt="Xiaomi Redmi Pad 2">
                 </a>
                 <h3>Xiaomi Redmi Pad 2</h3>
                 <p>$189.999</p>
-                <button>Agregar al Carrito</button>
+                <button class="agregar-carrito">Agregar al Carrito</button>
             </div>
 
             <div class="producto">
-                <a href="">
+                <a href="detalle-productos.html?id=22">
                 <img src="https://http2.mlstatic.com/D_NQ_NP_2X_886419-MLA95655996590_102025-F.webp" alt="iPad 11">
                 </a>
                 <h3>iPad 11</h3>
                 <p>$859.999</p>
-                <button>Agregar al Carrito</button>
+                <button class="agregar-carrito">Agregar al Carrito</button>
             </div>
 
             <div class="producto">
-                <a href="">
+                <a href="detalle-productos.html?id=23">
                 <img src="https://http2.mlstatic.com/D_NQ_NP_2X_957616-MLA95636464120_102025-F.webp" alt="Vyse Pad Pro 11">
                 </a>
                 <h3>Vyse Pad Pro 11</h3>
                 <p>$269.999</p>
-                <button>Agregar al Carrito</button>
+                <button class="agregar-carrito">Agregar al Carrito</button>
             </div>
 
             <div class="producto">
-                <a href="">
+                <a href="detalle-productos.html?id=24">
                 <img src="https://http2.mlstatic.com/D_NQ_NP_2X_625927-MLA96098701655_102025-F.webp" alt="Xiaomi Redmi Pad SE 11">
                 </a>
                 <h3>Xiaomi Redmi Pad SE 11</h3>
                 <p>$249.999</p>
-                <button>Agregar al Carrito</button>
+                <button class="agregar-carrito">Agregar al Carrito</button>
             </div>
 
             

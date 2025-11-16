@@ -40,5 +40,131 @@
     "precio": 1359999,
     "imagen": "https://http2.mlstatic.com/D_NQ_NP_2X_719371-MLA95236652597_102025-F.webp",
     "descripcion": "El iPhone 16 cuenta con pantalla OLED Super Retina XDR de 6,1″ con resolución 2556×1179 px. Funciona con el chip A18, incluye 8 GB de RAM y opciones de almacenamiento de 128 GB, 256 GB y 512 GB. Tiene cámara trasera de 48 MP (Sensor‑Shift OIS) + ultra gran angular de 12 MP, y una cámara frontal de 12 MP. Ofrece resistencia al agua y polvo IP68, puerto USB‑C, conectividad 5G, WiFi 7, y botón de acción personalizado. Con peso de 170 g y un diseño premium en aluminio con vidrio, es una opción sólida para usuarios que buscan rendimiento, cámara y soporte de largo plazo."
-}
+},
+  {
+    "id": 7,
+    "nombre": "Colmi P20 Plus",
+    "precio": 29999,
+    "imagen": "https://http2.mlstatic.com/D_NQ_NP_2X_902109-MLA96720852497_102025-F.webp",
+    "descripcion": "El Colmi P20 Plus es un smartwatch funcional y accesible con pantalla táctil de 1.85 pulgadas y diseño ultraligero. Permite monitorear la frecuencia cardíaca, el oxígeno en sangre, la presión arterial y el sueño. Incluye más de 20 modos deportivos, notificaciones inteligentes y control remoto de música. Es compatible con Android e iOS, y cuenta con resistencia al agua IP67. Su batería de 235 mAh ofrece hasta 7 días de autonomía con uso normal. Ideal para quienes buscan mantener un seguimiento activo de su salud y estilo de vida sin gastar demasiado dinero."
+  },
+  {
+    "id": 8,
+    "nombre": "Haylou Ls09a",
+    "precio": 59999,
+    "imagen": "https://http2.mlstatic.com/D_NQ_NP_2X_667457-MLA93490912789_092025-F.webp",
+    "descripcion": "El Haylou LS09A combina simplicidad y funcionalidad en un diseño elegante con pantalla TFT de 1.28 pulgadas. Incorpora monitoreo continuo de ritmo cardíaco, oxígeno en sangre, sueño y nivel de estrés. Soporta más de 12 modos deportivos y ofrece una autonomía de hasta 15 días gracias a su batería optimizada. Es resistente al agua con certificación IP68 y permite recibir notificaciones, llamadas y recordatorios de inactividad. Su cuerpo de metal ligero y correa de silicona ajustable lo hacen cómodo para el uso diario, tanto en entrenamientos como en entornos laborales o de ocio."
+  },
+  {
+    "id": 9,
+    "nombre": "Smartwatch Jd Capri 1.83",
+    "precio": 89999,
+    "imagen": "https://http2.mlstatic.com/D_NQ_NP_2X_642778-MLA95703190432_102025-F.webp",
+    "descripcion": "El Smartwatch JD Capri 1.83 se destaca por su amplia pantalla táctil de alta resolución y un diseño elegante en aleación metálica. Permite medir ritmo cardíaco, oxígeno en sangre, pasos, calorías y calidad del sueño. Ofrece más de 100 modos deportivos, con registro de actividad diaria y notificaciones en tiempo real. Incluye resistencia al agua IP67 y conectividad Bluetooth estable. Su batería de larga duración brinda hasta 10 días de uso normal. Ideal para usuarios que buscan un reloj moderno, funcional y con excelente relación calidad-precio para cuidar su salud y rendimiento físico."
+  },
+  {
+    "id": 10,
+    "nombre": "Samsung Galaxy Watch8",
+    "precio": 259999,
+    "imagen": "https://http2.mlstatic.com/D_NQ_NP_2X_873600-MLA95688273686_102025-F.webp",
+    "descripcion": "El Samsung Galaxy Watch8 redefine la experiencia de los relojes inteligentes con su pantalla Super AMOLED de alta nitidez y diseño premium en aluminio. Ofrece un sistema avanzado de sensores que miden ritmo cardíaco, temperatura corporal, oxígeno en sangre y composición corporal. Cuenta con conectividad Bluetooth, GPS integrado y compatibilidad completa con dispositivos Galaxy. Su batería dura hasta 40 horas con carga rápida inalámbrica. Permite responder llamadas, mensajes y reproducir música directamente desde el reloj. Es resistente al agua y polvo con certificación IP68, siendo perfecto para quienes buscan tecnología, salud y estilo."
+  },
+  {
+    "id": 11,
+    "nombre": "Samsung Fit 3",
+    "precio": 119999,
+    "imagen": "https://http2.mlstatic.com/D_NQ_NP_2X_722358-MLA95679329436_102025-F.webp",
+    "descripcion": "La Samsung Fit 3 combina elegancia y funcionalidad en una pulsera inteligente con pantalla AMOLED de 1.6 pulgadas. Diseñada para acompañar cada movimiento, ofrece monitoreo 24/7 de ritmo cardíaco, pasos, sueño y niveles de estrés. Soporta más de 100 modos deportivos, es resistente al agua hasta 5ATM y brinda una autonomía de hasta 13 días. Permite controlar música, recibir llamadas, mensajes y notificaciones. Compatible con Android y iOS, es perfecta para quienes buscan un dispositivo liviano y potente que los ayude a mantener un estilo de vida saludable y equilibrado."
+  },
+  {
+    "id": 12,
+    "nombre": "Xiaomi Redmi Watch 5 Active",
+    "precio": 79999,
+    "imagen": "https://http2.mlstatic.com/D_NQ_NP_2X_681309-MLA96101944713_102025-F.webp",
+    "descripcion": "El Xiaomi Redmi Watch 5 Active ofrece una pantalla AMOLED de 1.75 pulgadas con colores vibrantes y visibilidad excepcional incluso bajo el sol. Incorpora más de 120 modos deportivos, medición precisa de ritmo cardíaco y saturación de oxígeno, así como monitoreo avanzado del sueño. Es resistente al agua 5ATM y cuenta con batería de hasta 12 días de duración. Gracias a su diseño moderno y correa ergonómica, resulta cómodo durante todo el día. Compatible con la app Mi Fitness, permite visualizar estadísticas detalladas y mejorar la experiencia de salud y entrenamiento personal."
+  },
+  {
+    "id": 13,
+    "nombre": "Auriculares Logitech G435",
+    "precio": 159999,
+    "imagen": "https://http2.mlstatic.com/D_NQ_NP_2X_996309-MLA95967152319_102025-F.webp",
+    "descripcion": "Los Logitech G435 son auriculares inalámbricos ligeros diseñados para ofrecer máxima comodidad y sonido envolvente. Incorporan tecnología LIGHTSPEED y Bluetooth de baja latencia, ideales para juegos, música y llamadas. Su micrófono dual con cancelación de ruido garantiza voz clara y nítida. Con un peso de solo 165 g, resultan muy cómodos para uso prolongado. Su batería ofrece hasta 18 horas de autonomía. Fabricados con materiales reciclados, combinan sustentabilidad, estilo y rendimiento. Compatibles con PC, PlayStation, Nintendo Switch y dispositivos móviles, representan una opción completa para gamers y usuarios exigentes."
+  },
+  {
+    "id": 14,
+    "nombre": "Auriculares Harmony Cloud Gray",
+    "precio": 73999,
+    "imagen": "https://http2.mlstatic.com/D_NQ_NP_2X_664763-MLA95972136310_102025-F.webp",
+    "descripcion": "Los Harmony Cloud Gray ofrecen un diseño elegante con materiales suaves al tacto y sonido de alta fidelidad. Equipados con tecnología Bluetooth 5.0, brindan conexión estable y rápida con cualquier dispositivo. Su batería ofrece hasta 20 horas de reproducción continua y carga completa en apenas 2 horas. Incluyen cancelación pasiva de ruido y micrófono integrado para llamadas manos libres. Gracias a su diadema ajustable y almohadillas acolchadas, proporcionan comodidad prolongada. Ideales para trabajar, estudiar o disfrutar de la música, combinan rendimiento, estilo y una excelente relación calidad-precio."
+  },
+  {
+    "id": 15,
+    "nombre": "Auriculares Havit Fuxi",
+    "precio": 34599,
+    "imagen": "https://http2.mlstatic.com/D_NQ_NP_2X_945049-MLA96098989651_102025-F.webp",
+    "descripcion": "Los Havit Fuxi ofrecen una experiencia auditiva envolvente con drivers de alta calidad y diseño ergonómico. Su conexión Bluetooth 5.3 asegura una transmisión rápida y sin cortes, ideal para música, llamadas o gaming. Cuentan con micrófono incorporado, controles táctiles y resistencia al agua IPX4. La batería de larga duración permite hasta 6 horas de reproducción continua, extendidas a 24 horas con el estuche de carga. Compactos y ligeros, se adaptan perfectamente al oído, brindando comodidad durante todo el día. Una excelente opción para quienes buscan sonido potente y portabilidad."
+  },
+  {
+    "id": 16,
+    "nombre": "Auriculares Sennheiser 450bt",
+    "precio": 220999,
+    "imagen": "https://http2.mlstatic.com/D_NQ_NP_2X_642515-MLA95942577131_102025-F.webp",
+    "descripcion": "Los Sennheiser HD 450BT combinan calidad de sonido superior con diseño moderno y funcional. Incorporan cancelación activa de ruido, Bluetooth 5.0 y compatibilidad con códecs AAC, AptX y AptX Low Latency. Su batería ofrece hasta 30 horas de autonomía, con carga rápida mediante USB-C. Incluyen micrófono integrado para llamadas, controles en el auricular y modo transparente para mantenerte atento al entorno. Fabricados con materiales duraderos y almohadillas de alta comodidad, son ideales para viajes, trabajo o estudio. Brindan un audio equilibrado, potente y de nivel profesional en todo momento."
+  },
+  {
+    "id": 17,
+    "nombre": "Auriculares Corsair Virtuoso",
+    "precio": 387399,
+    "imagen": "https://http2.mlstatic.com/D_NQ_NP_2X_766053-MLA95393486204_102025-F.webp",
+    "descripcion": "Los Corsair Virtuoso RGB Wireless son auriculares premium que combinan sonido de alta resolución con diseño sofisticado. Incorporan controladores de 50 mm que ofrecen una respuesta de frecuencia amplia y precisa. Su micrófono desmontable con certificación Discord garantiza comunicación clara. Funcionan de forma inalámbrica mediante tecnología SLIPSTREAM de baja latencia o por cable USB. Cuentan con iluminación RGB personalizable y una batería de hasta 20 horas. Sus almohadillas de espuma viscoelástica brindan confort superior, convirtiéndolos en una excelente elección para gaming, streaming o trabajo profesional con audio de calidad."
+  },
+  {
+    "id": 18,
+    "nombre": "Auriculares JBL Tune 760BT",
+    "precio": 119999,
+    "imagen": "https://http2.mlstatic.com/D_NQ_NP_2X_705463-MLA85508931904_062025-F.webp",
+    "descripcion": "Los JBL Tune 760BT ofrecen el reconocido sonido Pure Bass característico de la marca. Incorporan cancelación activa de ruido, conexión Bluetooth multipunto y compatibilidad con asistentes de voz. Su batería proporciona hasta 50 horas de reproducción con ANC desactivado, y solo requieren 5 minutos de carga para 2 horas adicionales de uso. Son plegables, ligeros y cómodos gracias a su diseño ergonómico. Ideales para viajes o uso diario, garantizan audio nítido, bajos profundos y experiencia inalámbrica estable. Su acabado moderno los convierte en un accesorio atractivo y funcional para cualquier entorno."
+  },
+  {
+    "id": 19,
+    "nombre": "Samsung Galaxy Tab A9",
+    "precio": 229999,
+    "imagen": "https://http2.mlstatic.com/D_NQ_NP_2X_636469-MLA96128130403_102025-F.webp",
+    "descripcion": "La Samsung Galaxy Tab A9 combina potencia y portabilidad en un dispositivo diseñado para trabajo, estudio y entretenimiento. Posee una pantalla LCD de 8.7 pulgadas con resolución HD+, procesador MediaTek Helio G99 y 4 GB de RAM. Su batería de 5100 mAh garantiza horas de autonomía. Incluye sonido estéreo Dolby Atmos, Android 14 y conectividad Wi-Fi + Bluetooth. Su diseño metálico delgado y ligero facilita el transporte, mientras que el Modo Niños ofrece una experiencia segura para los más pequeños. Es una excelente opción para quienes buscan una tablet equilibrada, moderna y confiable."
+  },
+  {
+    "id": 20,
+    "nombre": "Xiaomi Redmi Pad",
+    "precio": 359999,
+    "imagen": "https://http2.mlstatic.com/D_NQ_NP_2X_644740-MLA95664593358_102025-F.webp",
+    "descripcion": "La Xiaomi Redmi Pad destaca por su pantalla de 10.6 pulgadas con resolución 2K y tasa de refresco de 90 Hz, ofreciendo imágenes nítidas y fluidas. Su procesador Helio G99, combinado con 6 GB de RAM, garantiza un rendimiento sólido en tareas cotidianas y multimedia. Los altavoces cuádruples con Dolby Atmos brindan un sonido envolvente, ideal para películas y juegos. Su batería de 8000 mAh ofrece hasta 12 horas de uso continuo con carga rápida de 18 W. Construida en aluminio, combina elegancia, potencia y durabilidad en un dispositivo versátil para toda la familia."
+  },
+  {
+    "id": 21,
+    "nombre": "Xiaomi Redmi Pad 2",
+    "precio": 189999,
+    "imagen": "https://http2.mlstatic.com/D_NQ_NP_2X_706531-MLA96126565125_102025-F.webp",
+    "descripcion": "La Xiaomi Redmi Pad 2 ofrece una experiencia equilibrada para entretenimiento y productividad. Incorpora una pantalla de 11 pulgadas con resolución 2K y brillo de 400 nits, ideal para visualizar contenido con claridad. Equipada con procesador Snapdragon 680 y batería de 8000 mAh, brinda hasta 10 horas de uso continuo. Su diseño metálico ultradelgado le otorga un aspecto moderno y resistente. Incluye cámara frontal gran angular de 8 MP para videollamadas nítidas, sonido estéreo con Dolby Atmos y sistema operativo MIUI Pad. Perfecta para estudiar, trabajar o disfrutar series y juegos en alta calidad."
+  },
+  {
+    "id": 22,
+    "nombre": "iPad 11",
+    "precio": 859999,
+    "imagen": "https://http2.mlstatic.com/D_NQ_NP_2X_886419-MLA95655996590_102025-F.webp",
+    "descripcion": "El iPad 11 de Apple combina potencia, diseño y funcionalidad en un solo dispositivo. Su pantalla Liquid Retina de 11 pulgadas ofrece colores precisos y brillo superior. Equipado con el chip A15 Bionic, brinda rendimiento sobresaliente para tareas exigentes, edición de video o juegos. Compatible con Apple Pencil y Magic Keyboard, se adapta perfectamente al entorno de productividad. Incluye cámara trasera de 12 MP, frontal ultra wide con Center Stage y conectividad Wi-Fi 6. Su autonomía supera las 10 horas y su cuerpo de aluminio lo hace liviano y duradero. Ideal para profesionales y estudiantes."
+  },
+  {
+    "id": 23,
+    "nombre": "Vyse Pad Pro 11",
+    "precio": 269999,
+    "imagen": "https://http2.mlstatic.com/D_NQ_NP_2X_957616-MLA95636464120_102025-F.webp",
+    "descripcion": "La Vyse Pad Pro 11 es una tablet moderna con pantalla Full HD de 11 pulgadas y cuerpo metálico. Su procesador Octa-Core ofrece un rendimiento fluido, ideal para estudiar, trabajar o disfrutar contenido multimedia. Incorpora 8 GB de RAM, 128 GB de almacenamiento ampliable y batería de 7000 mAh con carga rápida USB-C. Integra cámaras delantera de 8 MP y trasera de 13 MP, además de sonido estéreo Hi-Fi. Corre Android 13 y es compatible con accesorios Bluetooth. Su peso ligero y diseño elegante la convierten en una excelente opción para quienes buscan potencia y funcionalidad a precio accesible."
+  },
+  {
+    "id": 24,
+    "nombre": "Xiaomi Redmi Pad SE 11",
+    "precio": 249999,
+    "imagen": "https://http2.mlstatic.com/D_NQ_NP_2X_625927-MLA96098701655_102025-F.webp",
+    "descripcion": "La Xiaomi Redmi Pad SE 11 combina diseño premium con gran rendimiento. Presenta una pantalla LCD FHD+ de 11 pulgadas con tasa de refresco 90 Hz, perfecta para visualizar videos o leer. Su procesador Snapdragon 680, 6 GB de RAM y 128 GB de almacenamiento garantizan fluidez y eficiencia. Ofrece sonido Dolby Atmos a través de cuatro altavoces, batería de 8000 mAh con carga rápida y sistema MIUI Pad basado en Android 13. Ideal para ocio, estudio o productividad ligera, combina elegancia, potencia y portabilidad en un dispositivo que destaca por su excelente relación precio-rendimiento."
+  }
 ]

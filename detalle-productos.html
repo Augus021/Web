@@ -29,7 +29,6 @@
             justify-content: left;
             width: 2035px;
             height: 150%;
-            background-color: rgb(255, 255, 255);
             border-radius: 8px;
             box-shadow: 0 0 15px gray;
             margin-top: 30px;
@@ -88,52 +87,136 @@
         }
 
 
-        /* estilo del detalle de productos*/
-        .detalle-prod {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        gap: 40px;
-        padding: 30px;
-        flex-wrap: wrap; 
-        }
+       .detalle-prod {
+  display: flex;
+  gap: 30px;
+  padding: 30px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
 
-        .detalle-prod img{
-        width: 100px;
-        }
+.detalle-img {
+  flex: 1;
+  min-width: 300px;
+  display: flex;
+  justify-content: center;
+}
 
-        .prod-nombre h2{
-            font-size: 40px;
-            font-family: Arial, Helvetica, sans-serif;
-            align-items: center;
-        }
+.detalle-img img {
+  width: 100%;
+  max-width: 450px;
+  border-radius: 8px;
+  box-shadow: 0 0 15px gray;
+}
 
-        .parr-prod h2{
-            font-size: 20px; 
-            margin: 10px 0;
-        }
+.detalle-info {
+  flex: 1;
+  min-width: 300px;
+  height: 300px;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 15px gray;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  font-family: Arial, sans-serif;
+}
 
-        .h3-prod{
-            color: rgb(48, 201, 155);
-            font-size: 35px;
-        }
+.detalle-info h2 {
+  font-size: 28px;
+}
 
-        .btn-prod{
-            padding: 10px 20px; 
-            background-color: #ffd700; 
-            border: none; 
-            border-radius: 5px; 
-            font-weight: bold; 
-            cursor: pointer; 
-            width:200px; 
-            height: 60px; 
-            font-size: 15px;
-        }
+.detalle-info p {
+  font-size: 16px;
+}
 
-        .btn-prod:hover{
-            background-color: rgb(48, 201, 155);
-            color: rgb(255, 255, 255);
-        }
+.detalle-info .h3-prod {
+  font-size: 24px;
+  color: #30c99b;
+}
+
+.detalle-info button {
+  background-color: #ffd700;
+  border: none;
+  border-radius: 6px;
+  padding: 12px;
+  font-weight: bold;
+  cursor: pointer;
+  height: 75px;
+}
+
+.detalle-info button:hover {
+  background-color: #30c99b;
+  color: #fff;
+}
+
+.beneficios-titulo {   
+    text-align: center; 
+    gap:40px;
+    padding:10px;
+    background-color: #55555536;
+    border-radius: 5px;
+    font-family: Arial, sans-serif;
+    margin-top: 35px;
+    margin-bottom: 30px;
+    font-weight: bold;
+}
+
+.beneficios {
+    display: flex;
+    width: 25%;
+    margin: 0 auto;
+    gap:40px;
+    justify-content: center;
+    padding:10px;
+    background-color: #55555536;
+    border-radius: 5px;
+    font-family: Arial, sans-serif;
+    margin-top: 35px;
+    margin-bottom: 30px;    
+    font-weight: bold;
+}
+
+.beneficio {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.beneficio img {
+    width: 80px;
+    height: 80px;
+    margin-bottom: 5px;
+}
+
+.beneficio p {
+    font-size: 14px;
+    color: #555;
+}
+
+.retorno{
+    background-color: #000000;
+    color: rgb(248, 26, 26);
+  border: none;
+  border-radius: 6px;
+  padding: 12px;
+  font-weight: bold;
+  cursor: pointer;
+  height: 50px;
+  width: 15%;
+  font-size: 15px;
+  font-family: Arial, Helvetica, sans-serif;
+  text-decoration: none;
+  text-transform: none;
+  margin-top: 25px;
+  margin-bottom: auto;
+}
+.retorno:hover {
+  background-color: #0000006e;
+  color: #fff;
+}
 
 
     </style>
@@ -145,11 +228,33 @@
         
     </header>
 
-    <h4 class="retorno"><a href="index.html"> ⪡ Volver a la pagina principal</a></h4>
+    <button class="retorno"><a href="index.html"> ⪡ Volver a la pagina principal</a></button>
 
     <main id="detalle">
-        
+         
+
     </main>
+    <div class="beneficios-titulo">
+           <h2>✅ BENEFICIOS DE COMPRAR CON NOSOTROS ✅</h2>
+           <div class="beneficios">
+        <div class="beneficio">
+          <img src="https://img.icons8.com/color/96/free-shipping.png" alt="Envío gratis">
+          <p>Envío<br>gratis</p>
+        </div>
+        <div class="beneficio">
+          <img src="https://cdn-icons-png.flaticon.com/512/9721/9721115.png" alt="Pago seguro">
+          <p>Pago<br>seguro</p>
+        </div>
+        <div class="beneficio">
+          <img src="https://img.icons8.com/color/96/online-support.png" alt="Soporte 24/7">
+          <p>Soporte<br>24/7</p>
+        </div>
+        <div class="beneficio">
+          <img src="https://img.icons8.com/color/96/warranty-card.png" alt="Garantía">
+          <p>Garantía<br>24 meses</p>
+        </div>
+      </div>
+     </div>
 
 
    <footer id="footer">
@@ -193,7 +298,7 @@
          <p>&copy; 2025 TechStore - Todos los derechos reservados</p>
     </footer>
     
-        <script src="script.js"></script>
+    <script src="detalle.js"></script>
 
 </body>
 
