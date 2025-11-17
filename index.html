@@ -14,7 +14,7 @@
     <header>
         <div class="logo"> <span class="colo">T</span>ech<span class="colo">S</span>tore </div>
         <div class="buscador"> 
-            <input type="text" placeholder="Buscar productos..."> 
+            <input type="text" id="buscador" placeholder="Buscar productos..."> 
             <button>Buscar</button>
         </div>
         <div id="carritoIcono" class="carrito-container">
@@ -26,7 +26,7 @@
 <!-- Carrito de compras -->
     <div id="carrito" class="carrito">
   <h2>Tu carrito</h2>
-  <button class="cerrar-carrito"><img src="https://img.icons8.com/?size=100&id=39944&format=png" class="img-cerrar-carrito"></button>
+  <button class="cerrar-carrito"><img src="https://img.icons8.com/?size=100&id=39944&format=png" class="img-cerrar-carrito" alt="Cerrar carrito"></button>
   <ul id="listaCarrito"></ul>
   <div class="total">
     <strong>Total:</strong> $<span id="totalCarrito">0</span>
@@ -38,7 +38,6 @@
     <nav class="navegacion">
         <ul>
             <li><a href="">INICIO</a></li>
-            <li><a href="#">OFERTAS FLASH!!</a></li>
             <li><a href="#footer">NOSOTROS</a></li>
             <li><a href="#footer">SOPORTE</a></li>
         </ul>
@@ -299,6 +298,8 @@
     </main>
 
    <footer id="footer">
+        <section class="nosotros">
+            <img src="https://cdn-icons-png.freepik.com/512/17990/17990556.png" alt="Sobre Nosotros">
         <h3>SOBRE NOSOTROS</h3>
         <p> Nuestra tienda es un espacio especializado en la comercialización 
             de aparatos electrónicos de última generación, enfocada principalmente
@@ -313,8 +314,21 @@
             en línea. En nuestro catálogo encontrarás desde los modelos más recientes de smartphones
             y relojes inteligentes hasta accesorios que mejoran tu productividad y conectividad diaria. <br><br></p>
 
+            <img src="https://cdn-icons-png.freepik.com/512/16942/16942501.png" alt="Confianza">
+            <h3>PORQUE ELEGIRNOS A NOSOTROS?</h3>
+            <p>En TechStore nos destacamos por ofrecer tecnología de última generación al mejor precio,
+                 con productos 100 % originales, garantía oficial y atención personalizada. Combinamos 
+                 innovación, calidad y confianza para brindarte una experiencia de compra ágil, segura 
+                 y moderna. Ya sea que busques un smartphone, smartwatch, auriculares o accesorios, te 
+                 asesoramos para que encuentres exactamente lo que necesitás. Elegirnos es apostar por 
+                 tecnología confiable, servicio responsable y la mejor atención al cliente.<br><br></p>
+
+            <p>&copy; 2025 TechStore - Todos los derechos reservados</p>
+        </section>
+
 
             <div class="soporte">
+            <img src="https://cdn-icons-png.flaticon.com/512/3246/3246853.png" alt="Soporte">
             <h3>SOPORTE</h3>
             <p>Has tenido algun problema con nuestra pagina? <br>Envianos tu inconveniente y te ayudaremos a resolverlo:
 
@@ -336,7 +350,6 @@
             </form>
 
             </div>
-         <p>&copy; 2025 TechStore - Todos los derechos reservados</p>
     </footer>
     
     <script src="script.js"></script>

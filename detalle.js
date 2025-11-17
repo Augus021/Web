@@ -1,13 +1,11 @@
-// Obtiene el parámetro "id" de la URL
 const params = new URLSearchParams(window.location.search);
 const id = parseInt(params.get("id"));
 const contenedor = document.getElementById("detalle");
 
-// Carga el archivo JSON con los productos
 fetch("productos.json")
   .then(res => res.json())
   .then(productos => {
-    // Busca el producto por ID
+
     const producto = productos.find(p => p.id === id);
 
     if (!producto) {
@@ -15,7 +13,6 @@ fetch("productos.json")
       return;
     }
 
-    // Muestra la información en pantalla
     contenedor.innerHTML = `
       <div class="detalle-prod">
         <div class="detalle-img">
@@ -25,7 +22,7 @@ fetch("productos.json")
           <h2>${producto.nombre}</h2>
           <p>${producto.descripcion}</p>
           <h3 class="h3-prod">$${producto.precio.toLocaleString("es-AR")}</h3>
-          <button id="btnComprar" style="width: 80%; align-self: center;">COMPRAR</button>
+          <button id="btnComprar">COMPRAR</button>
     `;
      const btnComprar = document.getElementById("btnComprar");
     btnComprar.addEventListener("click", () => {

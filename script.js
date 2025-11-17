@@ -1,12 +1,14 @@
-// Selección correcta
+// variables
 const botonesAgregar = document.querySelectorAll(".agregar-carrito");
 const carrito = document.getElementById("carrito");
 const carritoIcono = document.getElementById("carritoIcono");
-const cerrarCarrito = document.querySelector(".cerrar-carrito"); // ✅ usar clase
+const cerrarCarrito = document.querySelector(".cerrar-carrito"); 
 const listaCarrito = document.getElementById("listaCarrito");
 const totalCarrito = document.getElementById("totalCarrito");
 const contadorCarrito = document.getElementById("contadorCarrito");
 const btnPagar = document.getElementById("btnPagar");
+const buscador = document.getElementById("buscador");
+const productos = document.querySelectorAll(".producto");
 
 let carritoProductos = [];
 
@@ -27,7 +29,7 @@ botonesAgregar.forEach(boton => {
     }
 
     actualizarCarrito();
-    carrito.classList.add("activo"); // Abrir carrito automáticamente
+    carrito.classList.add("activo"); 
   });
 });
 
@@ -88,5 +90,18 @@ btnPagar.addEventListener("click", () => {
   carritoProductos = [];
   actualizarCarrito();
 });
+
+// Buscador
+buscador.addEventListener("input", () => {
+  const filtro = buscador.value.toLowerCase();
+  productos.forEach(producto =>{
+    const nombre = producto.querySelector("h3").textContent.toLowerCase();
+    if (nombre.includes(filtro)){
+      producto.style.display = "flex";
+    } else {
+      producto.style.display = "none";
+    }
+  });
+  });
 
 
