@@ -9,11 +9,10 @@
             background-color: rgb(227, 233, 233);
         }
             header{
-        background-color: #ffd700;
         display: flex;
-        flex-direction: row;  
-        justify-content: center;
         align-items: center;
+        background-image: url("https://img.wallpapic.com/i0314-823-247/medium/azules-para-monitores-duales-azul-electrico-ligero-fondo-de-pantalla.jpg");
+        justify-content: space-between;
         padding: 25px;
         margin: 1px;
         gap: 25px;
@@ -24,12 +23,20 @@
         text-decoration: none;
         }
 
+        header h1{
+            color: rgba(13, 207, 255, 0.575); 
+            font-size: 55px;
+            margin-left: 20px;
+            font-family: 'Arial', sans-serif;
+            font-weight: bold;
+        }
+
 
         main {
+            background-image: url("https://www.shutterstock.com/image-vector/minimalist-wave-line-background-clean-600nw-2435948567.jpg");
             justify-content: left;
             width: 2035px;
             height: 150%;
-            background-color: rgb(255, 255, 255);
             border-radius: 8px;
             box-shadow: 0 0 15px gray;
             margin-top: 30px;
@@ -37,122 +44,331 @@
         }
 
         footer {
-        margin-top: 30px;
-        background-color: black;
+        display: flex;
+        flex-direction: row;
+        background-image: 
+        linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("https://wallpapers.com/images/featured/azul-4k-jyoxxfcdd5cjvvmq.jpg");
+        border-radius: 10px;
         padding: 40px 20px; 
         color: #fff;
-        border-radius: 8px;
+        font-family: Arial, Helvetica, sans-serif;
         }
 
+        .nosotros{
+          display: flex;
+          flex-direction: column;
+          background-color: rgba(0, 0, 0, 0.932);
+          padding: 20px 20px;
+          font-size: 18px;
+          height: 80%;
+          width: 1500px;
+          gap: 20px;
+          margin-right: 50px;
+          margin-left: 20px;
+          border-radius: 10px;
+          margin-bottom: 15px;
+          color: white;
+          box-shadow: 3px 3px 20px 3px #30c99b;
+        }
+
+        .nosotros h3{
+          margin-bottom: 15px;
+          font-size: 25px;
+          color: #30c99b;
+          align-self: center;
+          align-items: center;
+        }
+
+
+        .nosotros img{
+          align-self: center;
+          width: 130px;
+          height: auto;
+          margin-bottom: 15px;
+          align-content: center;
+          text-align: center;
+        }
+
+
         .soporte input{
-        display: flex;
-        flex-direction: column;
-        border-radius: 5px;
-        width: 200px;
-        height: 30px;
-        margin-top: 10px;
-        margin-bottom: 15px;
+          display: flex;
+          flex-direction: column;
+          border-radius: 5px;
+          width: 100%;
+          height: 30px;
+          margin-top: 10px;
+          margin-bottom: 15px;
+          margin-bottom: 20px;
         }
 
         .soporte{
-            background-color: rgba(128, 128, 128, 0.315);
-            padding: 10px 10px;
-            margin-right: 75%;
-            border-radius: 6px;
-            margin-top: 15px;
-            margin-bottom: 45px;
+          display: flex;
+          flex-direction: column;
+            background-color: rgba(0, 0, 0, 0.932);
+            padding: 20px 20px;
+            font-size: 18px;
+            border-radius: 10px;
+            margin-top: 4px;
+            margin-bottom: 15px;
+            box-shadow: 3px 3px 20px 3px #30c99b;
+        }
+
+        .soporte img{
+          align-self: center; 
+          width: 150px;
+          height: auto;
+          margin-bottom: 15px;
+          align-content: center;
+          text-align: center;
+        }
+
+        .soporte h3{
+          align-self: center;
+          align-items: center;
+          margin-bottom: 15px;
+          font-weight: bold;
+          font-size: 25px;
+          color: #30c99b;
         }
 
         .soporte select, button, label{
-        display: flex;
-        flex-direction: column;
-        border-radius: 5px;
-        width: 200px; 
-        height: 30px;
-        margin-top: 15px;
-        margin-bottom: 15px;
-        justify-content: center;
+          display: flex;
+          flex-direction: column;
+          border-radius: 5px;
+          width: 100%; 
+          height: 30px;
+          margin-top: 20px;
+          margin-bottom: 10px;
+          justify-content: center;
         }
 
+        .soporte label{
+          margin-top: 20px;
+          margin-bottom: 10px;
+          font-weight: bold;
+          font-size: 20px;
+        }
+
+        .soporte button{
+          background-color: #30c99b;
+          color: white;
+          font-weight: bold;
+          cursor: pointer;
+          margin-top: 15px;
+          height: 40px;
+        }
+
+        .soporte p{
+          margin-top: 20px;
+          margin-bottom: 10px;
+          font-weight: bold;
+          font-size: 20px;
+        }
+
+
         .soporte textarea{
-        width: 430px;
-        height: 180px;
-        border-radius: 5px;
-        margin-top: 10px;
+          width: 100% ;
+          height: 100px;
+          border-radius: 5px;
+          margin-top: 1px;
         }
 
         .soporte button:hover{
-        transform: scale(1,1.2);
-        background-color: #ffd700;
-        cursor:pointer;
+          transform: scale(1,1.2);
+          background-color: #ffd700;
+          cursor: pointer;
         }
 
 
-        /* estilo del detalle de productos*/
         .detalle-prod {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        gap: 40px;
-        padding: 30px;
-        flex-wrap: wrap; 
+          display: flex;
+          gap: 30px;
+          padding: 30px;
+          flex-wrap: wrap;
+          justify-content: center;
         }
 
-        .detalle-prod img{
-        width: 100px;
+        .detalle-img {
+          flex: 1;
+          min-width: 300px;
+          display: flex;
+          justify-content: center;
         }
 
-        .prod-nombre h2{
-            font-size: 40px;
-            font-family: Arial, Helvetica, sans-serif;
+        .detalle-img img {
+          width: 100%;
+          max-width: 450px;
+          border-radius: 8px;
+          box-shadow: 0 0 15px gray;
+        }
+
+        .detalle-info {
+          flex: 1;
+          min-width: 300px;
+          height: 300px;
+          background-color: #fff;
+          padding: 20px;
+          border-radius: 8px;
+          box-shadow: 0 0 15px gray;
+          display: flex;
+          flex-direction: column;
+          gap: 20px;
+          font-family: Arial, sans-serif;
+          padding-bottom: 45px;
+        }
+
+        .detalle-info h2 {
+          font-size: 28px;
+        }
+
+        .detalle-info p {
+          font-size: 16px;
+        }
+
+        .detalle-info .h3-prod {
+          font-size: 34px;
+          color: #30c99b;
+          align-self: center;
+          margin-bottom: 25px;
+        }
+
+        .detalle-info button {
+          background-color: #ffd700;
+          border: none;
+          border-radius: 6px;
+          padding: 12px;
+          font-weight: bold;
+          cursor: pointer;
+          height: 75px;
+          width: 350px;
+          align-self: center;
+          border-style:solid;
+          border-color: black;
+        }
+
+        .detalle-info button:hover {
+          background-color: #30c99b;
+          color: #fff;
+          transform: scale(1.1);
+          transition: ease 0.3s;
+        }
+
+        .beneficios-titulo {   
+            text-align: center;
+            justify-self: center;
+            width: 98%; 
+            gap:40px;
+            padding:10px;
+            background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),url("https://st.depositphotos.com/17620692/61553/v/450/depositphotos_615535732-stock-illustration-modern-elegant-white-gray-banner.jpg");
+            border-radius: 5px;
+            font-family: Arial, sans-serif;
+            margin-top: 35px;
+            margin-bottom: 30px;
+            font-weight: bold;
+            box-shadow: #55555536 0px 0px 10px 0px;
+        }
+
+        .beneficios {
+            display: flex;
+            width: 28%;
+            margin: 0 auto;
+            gap:40px;
+            justify-content: center;
+            padding:10px;
+            background-color: #555555c9;
+            border-radius: 5px;
+            font-family: Arial, sans-serif;
+            margin-top: 35px;
+            margin-bottom: 30px;    
+            font-weight: bold;
+        }
+
+        .beneficio {
+            display: flex;
+            flex-direction: column;
             align-items: center;
+            text-align: center;
         }
 
-        .parr-prod h2{
-            font-size: 20px; 
-            margin: 10px 0;
+        .beneficio img {
+            width: 80px;
+            height: 80px;
+            margin-bottom: 5px;
         }
 
-        .h3-prod{
-            color: rgb(48, 201, 155);
-            font-size: 35px;
+        .beneficio p {
+            font-size: 14px;
+            color: #ffffff;
         }
 
-        .btn-prod{
-            padding: 10px 20px; 
-            background-color: #ffd700; 
-            border: none; 
-            border-radius: 5px; 
-            font-weight: bold; 
-            cursor: pointer; 
-            width:200px; 
-            height: 60px; 
+
+        .retorno a {
+            text-decoration: none;
+            color: black
+        }
+        .retorno {
+            background-color: #00000054;
+            border-color: #30c99b;
+            border-radius: 6px;
+            font-weight: bold;
+            cursor: pointer;
+            height: 75px;
+            width: auto;
             font-size: 15px;
+            font-family: Arial, Helvetica, sans-serif;
         }
 
-        .btn-prod:hover{
-            background-color: rgb(48, 201, 155);
-            color: rgb(255, 255, 255);
+        .retorno:hover {
+            background-color:  #28a57f6b;
+            transform: scale(1.2);
+            transition: ease 0.2s;
+        } 
+
+        .retorno img {
+          width: 60px;
         }
-
-
     </style>
+
 </head>
 
 <body>
     <header>
+        <button class="retorno"><a href="index.html"> <img src="https://img.icons8.com/?size=100&id=115773&format=png&color=000000"></a></button>
         <h1>TechStore</h1>
         
     </header>
 
-    <h4 class="retorno"><a href="index.html"> ⪡ Volver a la pagina principal</a></h4>
-
+    
     <main id="detalle">
-        
+      <!-- Carga los productos desde el JSON-->
     </main>
 
+    <div class="beneficios-titulo">
+           <h2>✅ BENEFICIOS DE COMPRAR CON NOSOTROS ✅</h2>
+           <div class="beneficios">
+        <div class="beneficio">
+          <img src="https://img.icons8.com/color/96/free-shipping.png" alt="Envío gratis">
+          <p>Envío<br>gratis</p>
+        </div>
+        <div class="beneficio">
+          <img src="https://cdn-icons-png.flaticon.com/512/9721/9721115.png" alt="Pago seguro">
+          <p>Pago<br>seguro</p>
+        </div>
+        <div class="beneficio">
+          <img src="https://img.icons8.com/color/96/online-support.png" alt="Soporte 24/7">
+          <p>Soporte<br>24/7</p>
+        </div>
+        <div class="beneficio">
+          <img src="https://img.icons8.com/color/96/warranty-card.png" alt="Garantía">
+          <p>Garantía<br>24 meses</p>
+        </div>
+      </div>
+     </div>
 
-   <footer id="footer">
+
+  <footer id="footer">
+        <section class="nosotros">
+            <img src="https://cdn-icons-png.freepik.com/512/17990/17990556.png" alt="Sobre Nosotros">
         <h3>SOBRE NOSOTROS</h3>
         <p> Nuestra tienda es un espacio especializado en la comercialización 
             de aparatos electrónicos de última generación, enfocada principalmente
@@ -167,8 +383,21 @@
             en línea. En nuestro catálogo encontrarás desde los modelos más recientes de smartphones
             y relojes inteligentes hasta accesorios que mejoran tu productividad y conectividad diaria. <br><br></p>
 
+            <img src="https://cdn-icons-png.freepik.com/512/16942/16942501.png" alt="Confianza">
+            <h3>PORQUE ELEGIRNOS A NOSOTROS?</h3>
+            <p>En TechStore nos destacamos por ofrecer tecnología de última generación al mejor precio,
+                 con productos 100 % originales, garantía oficial y atención personalizada. Combinamos 
+                 innovación, calidad y confianza para brindarte una experiencia de compra ágil, segura 
+                 y moderna. Ya sea que busques un smartphone, smartwatch, auriculares o accesorios, te 
+                 asesoramos para que encuentres exactamente lo que necesitás. Elegirnos es apostar por 
+                 tecnología confiable, servicio responsable y la mejor atención al cliente.<br><br></p>
+
+            <p>&copy; 2025 TechStore - Todos los derechos reservados</p>
+        </section>
+
 
             <div class="soporte">
+            <img src="https://cdn-icons-png.flaticon.com/512/3246/3246853.png" alt="Soporte">
             <h3>SOPORTE</h3>
             <p>Has tenido algun problema con nuestra pagina? <br>Envianos tu inconveniente y te ayudaremos a resolverlo:
 
@@ -190,10 +419,9 @@
             </form>
 
             </div>
-         <p>&copy; 2025 TechStore - Todos los derechos reservados</p>
     </footer>
     
-        <script src="script.js"></script>
+    <script src="detalle.js"></script>
 
 </body>
 

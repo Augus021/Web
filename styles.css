@@ -4,18 +4,19 @@
     padding: 0;
     box-sizing: border-box;
     font-family: Arial, sans-serif;
+    scroll-behavior: smooth; 
 }
 
 
 body{
-  background-color: rgb(227, 233, 233);
+  background-image: url("https://www.shutterstock.com/image-vector/minimalist-wave-line-background-clean-600nw-2435948567.jpg");
   display: flex;
   flex-direction: column;
   min-height: 100vh;
 }
 
 header{
-  background-color: #ffd700;
+  background-image: url("https://img.wallpapic.com/i0314-823-247/medium/azules-para-monitores-duales-azul-electrico-ligero-fondo-de-pantalla.jpg");
   display: flex;
   flex-direction: row;  
   justify-content: right;
@@ -26,10 +27,12 @@ header{
   font-weight: bold;
   font-family: Arial, Helvetica, sans-serif;
   border-radius: 8px;
+  height: 150px;
 }
 
-.logo .colo {
-  color: rgba(48, 201, 155, 0.555); 
+.logo  h2{
+  font-size: 55px;
+  color: rgba(13, 207, 255, 0.575); 
 }
 
 /* HEADER */
@@ -50,24 +53,26 @@ header .buscador input[type="text"]{
   padding: 15px 10px;
 }
 
-.carrito-logo {
-  width: 50px;
-  height: auto;
-}
 
 
 header .buscador button{
+display: flex;
+margin: 0 0px;
 padding: 7px;
-background-color: rgba(83, 83, 83, 0.562);
+background-color: #00000054;
+border-color: #30c99b;
+font-weight: bold;
 cursor:pointer;
 width: 100px;
 height: 40px;
+color: #ddd;
 }
 
 .buscador button:hover{
-  font-weight: bold;
-  background-color: black;
-  color: #fff;
+  transform: scale(1.1);
+  transition: ease 0.2s;
+  background-color: rgba(0, 0, 0, 0.432);
+  color:  #30c99b;
 }
 
 .logo{
@@ -84,6 +89,17 @@ padding:20px 20px;
 font-family: Arial, Helvetica, sans-serif;
 font-weight: bold;
 color:black;
+margin-left: 100vh;
+}
+
+.navegacion a{
+  text-decoration: none;
+  color: rgb(48, 201, 155);
+}
+
+.navegacion:hover{
+  font-size: 18px;
+  transition: font-size 0.3s ease;
 }
 
 .navegacion ul{
@@ -91,30 +107,32 @@ color:black;
   list-style: none;
   text-align: center;
   gap: 20px;
-  font-size: 15px;
-  transition: font-size 0.4s ease;
+  font-size: 18px;
 }
 
 .navegacion ul a:hover{
   font-size: 20px;
-  transform: scale(1,1);
-  color:#ffd700
+  transform: scale(1.8);
+  transition: font-size 0.3s ease;
+  color:#000000
 }
 
 
 main {
   display:flex;
   flex: 1;
-}
+} 
 
 .grilla-de-productos{
   flex:1;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  flex-grow: 3;
   gap: 20px;
   justify-content: center;
   margin-left: 20px;
   margin-right: 20px;
+  margin-bottom: 30px;
 }
 
 .producto img{
@@ -126,7 +144,7 @@ main {
   display: flex;
   flex-direction: column;
   gap:10px;
-  background-color: rgb(255, 255, 255);
+  background-color: rgba(255, 255, 255, 0.342);
   border-radius: 5px;
   border:none;
   justify-content: center;
@@ -136,12 +154,22 @@ main {
   box-shadow: 0 0 5px gray;
 }
 
+.producto:hover {
+  box-shadow: 0 0 5px #30c99b;
+  transform: scale(1.05);
+  transition: ease 0.3s;
+}
+
 .producto button{
   background-color: #ffd700;
   padding: 8px 12px;
   border: none;
   border-radius: 6px;
   font-weight: bold;
+  justify-content: center;
+  align-items: center;
+  align-self: center;
+  box-shadow: 2px 2px 1px 1px #5555555b;
 }
 
 .producto button:hover{
@@ -167,6 +195,7 @@ min-width: 70%;
 max-width: 1600px;
 height: 30px;
 line-height: 10px;
+align-content: center;
 }
 
 
@@ -176,16 +205,19 @@ aside {
     display: flex;
     flex:1;
     flex-direction: column;
-    background-color: #fff;
+    background-color: #dbd1d186;
+    margin: 10px 10px 10px 10px;
     padding: 15px;
     border-radius: 8px;
     box-shadow: 0 0 5px rgba(0,0,0,0.1);
     margin-left: 10px;
     max-width: 200px;
-} 
+    box-shadow: 4px 4px 1px 1px #5555559a;
+}  
 
 aside h3 {
     margin-bottom: 10px;
+    font-size: 22px;
 }
 
 aside ul {
@@ -201,12 +233,13 @@ aside a {
     text-decoration: none;
     color: #333;
     font-size: 16px; 
-    transition: font-size 0.2s ease;
+    transition: font-size 0.3s ease;
 }
 
 aside a:hover {
-font-size: 18px;
+font-size: 20px;
 color:rgb(48, 201, 155);
+font-weight: bold;
 }
 
 
@@ -240,9 +273,18 @@ header .buscador input[type="text"]{
 
 .navegacion ul{
   flex-direction: column;
+  margin-top: 50px;
   gap:10px;
   text-align: center;
   padding:0;
+}
+
+.navegacion{
+  margin-left: 0;
+}
+
+.carrito-logo{
+  padding-bottom: 50px;
 }
 
 main{
@@ -262,10 +304,32 @@ aside{
   width: 150px;
 }
 
-footer{
+.footer{
   padding: 40px 20px;
   text-align: center;
 }
+
+.seccion-footer{
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+}
+
+.nosotros, .soporte{
+  min-width: 100%;
+  min-height: auto;
+  align-self: center;
+  align-items: center;
+  text-align: center;
+  margin: 0 auto;
+  margin: 0 0 0 0;
+}
+
+.soporte{
+  margin-left: 10;
+}
+
 }
 
 
@@ -303,11 +367,49 @@ aside{
 }
 
 
-
 footer {
-  background-color: black;
+  display: flex;
+  flex-direction: row;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("https://wallpapers.com/images/featured/azul-4k-jyoxxfcdd5cjvvmq.jpg");
+  border-radius: 10px;
   padding: 40px 20px; 
   color: #fff;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.nosotros{
+  display: flex;
+  flex-direction: column;
+  background-color: rgba(0, 0, 0, 0.932);
+  padding: 20px 20px;
+  font-size: 18px;
+  height: 80%;
+  width: 70%;
+  gap: 20px;
+  margin-right: 0px;
+  margin-left: 0px;
+  border-radius: 10px;
+  margin-bottom: 15px;
+  color: white;
+  box-shadow: 3px 3px 20px 3px #30c99b;
+}
+
+.nosotros h3{
+  margin-bottom: 15px;
+  font-size: 25px;
+  color: #30c99b;
+  align-self: center;
+  align-items: center;
+}
+
+
+.nosotros img{
+  align-self: center;
+  width: 130px;
+  height: auto;
+  margin-bottom: 15px;
+  align-content: center;
+  text-align: center;
 }
 
 
@@ -315,43 +417,236 @@ footer {
   display: flex;
   flex-direction: column;
   border-radius: 5px;
-  width: 200px;
+  width: 100%;
   height: 30px;
   margin-top: 10px;
   margin-bottom: 15px;
+  margin-bottom: 20px;
 }
 
 .soporte{
-    background-color: rgba(128, 128, 128, 0.315);
-    padding: 10px 10px;
-    margin-right: 75%;
-    border-radius: 6px;
-    margin-top: 15px;
-    margin-bottom: 45px;
+  display: flex;
+  flex-direction: column;
+  background-color: rgba(0, 0, 0, 0.932);
+  padding: 20px 20px;
+  font-size: 18px;
+  height: 80%;
+  width: 30%;
+  gap: 20px;
+  margin-right: 0px;
+  margin-left: 20px;
+  align-content: center;
+  border-radius: 10px;
+  margin-bottom: 15px;
+  color: white;
+  box-shadow: 3px 3px 20px 3px #30c99b;
+}
+
+.soporte img{
+  align-self: center; 
+  width: 150px;
+  height: auto;
+  margin-bottom: 15px;
+  align-content: center;
+  text-align: center;
+}
+
+.soporte h3{
+  align-self: center;
+  align-items: center;
+  margin-bottom: 15px;
+  font-weight: bold;
+  font-size: 25px;
+  color: #30c99b;
 }
 
 .soporte select, button, label{
   display: flex;
   flex-direction: column;
   border-radius: 5px;
-  width: 200px; 
+  width: 100%; 
   height: 30px;
-  margin-top: 15px;
-  margin-bottom: 15px;
+  margin-top: 20px;
+  margin-bottom: 10px;
   justify-content: center;
 }
 
+.soporte label{
+  margin-top: 20px;
+  margin-bottom: 10px;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.soporte button{
+  background-color: #30c99b;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  margin-top: 15px;
+  height: 40px;
+}
+
+.soporte p{
+  margin-top: 20px;
+  margin-bottom: 10px;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+
 .soporte textarea{
-  width: 430px;
-  height: 180px;
+  width: 100% ;
+  height: 135px;  
   border-radius: 5px;
-  margin-top: 10px;
+  margin-top: 1px;
 }
 
 .soporte button:hover{
   transform: scale(1,1.2);
   background-color: #ffd700;
-  cursor:pointer;
+  cursor: pointer;
+}
+
+
+
+/*  CARRITO DE COMPRAS */
+.carrito-container {
+  position: relative;
+  cursor: pointer;
+}
+
+.carrito-container img {
+  width: 45px;
+  height: auto;
+}
+
+#contadorCarrito {
+  position: absolute;
+  top: -8px;
+  right: -8px;
+  background: red;
+  color: white;
+  border-radius: 50%;
+  padding: 2px 7px;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+
+.carrito {
+  position: fixed;
+  top: 0;
+  right: -400px;
+  width: 280px;
+  height: 100%;
+  background: white;
+  box-shadow: -3px 0 8px rgba(0,0,0,0.3);
+  padding: 20px;
+  transition: right 0.4s ease;
+  z-index: 1000;
+  display: flex;
+  flex-direction: column;
+}
+
+.carrito.activo {
+  right: 0;
+}
+
+.carrito h2 {
+  text-align: center;
+  margin-bottom: 15px;
+  border-bottom: 2px solid #ffd700;
+  padding-bottom: 10px;
+}
+
+#listaCarrito {
+  flex: 1;
+  overflow-y: auto;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+#listaCarrito li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #ddd;
+  padding: 10px 0;
+}
+
+
+.cerrar-carrito {
+  align-self: center;
+  justify-self: center;
+  cursor: pointer;
+  color: #555;
+  transition: 0.2s;
+  width: 100px;
+}
+
+.img-cerrar-carrito {
+  width: 35px;
+  height: auto;
+  align-self: center;
+} 
+
+
+.cerrar-carrito:hover {
+  background-color: #28a57f49;
+  transform: scale(1.2);
+  border-color: #30c99b;
+  border-style: solid;
+}
+
+.botones-cantidad {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.botones-cantidad button {
+  background: #ffd700;
+  border: none;
+  height: 20px;
+  width: auto;
+  padding: 4px 8px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.botones-cantidad button:hover {
+  background: #30c99b;
+  color: #fff;
+}
+
+.total {
+  font-size: 18px;
+  margin-top: 15px;
+  text-align: center;
+  gap: 10px;
+}
+
+#btnPagar {
+  background: #30c99b;
+  color: white;
+  border: none;
+  height: 45px;
+  width: 100%;
+  padding: 10px;
+  border-radius: 6px;
+  margin-top: 15px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+#btnPagar:hover {
+  background: #28a57f;
+  transform: scale(1.1);
+  transition: ease 0.3s;
+  font-weight: bold;
 }
 
 

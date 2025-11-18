@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Panel de Administración</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f4;
+      padding: 20px;
+    }
+    .container {
+      max-width: 1000px;
+      margin: auto;
+      background: white;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+    h1 {
+      text-align: center;
+      margin-bottom: 20px;
+      color: #30c99b;
+    }
+    form {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      margin-bottom: 30px;
+    }
+    input, textarea, button {
+      padding: 8px;
+      font-size: 16px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+    button {
+      background: #ffd700;
+      cursor: pointer;
+      font-weight: bold;
+    }
+    button:hover {
+      background: #30c99b;
+      color: white;
+    }
+    .productos-lista {
+      display: grid;
+      gap: 15px;
+    }
+    .producto-item {
+      padding: 15px;
+      border: 1px solid #ddd;
+      border-radius: 6px;
+      background: #fafafa;
+    }
+    .acciones {
+      margin-top: 10px;
+    }
+    .acciones button {
+      margin-right: 8px;
+      padding: 5px 10px;
+      font-size: 14px;
+    }
+    .filtro {
+      margin-bottom: 20px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>_Panel de Administración de Productos_</h1>
+
+    <!-- Formulario para agregar/editar -->
+    <form id="formProducto">
+      <input type="hidden" id="id" />
+      <input type="text" id="nombre" placeholder="Nombre del producto" required />
+      <input type="number" id="precio" placeholder="Precio" required />
+      <input type="url" id="imagen" placeholder="URL de la imagen" required />
+      <textarea id="descripcion" placeholder="Descripción" rows="4" required></textarea>
+      <button type="submit" id="btnGuardar">Agregar Producto</button>
+      <button type="button" id="btnCancelar" style="display:none;">Cancelar</button>
+    </form>
+
+    <!-- Filtro -->
+    <div class="filtro">
+      <input type="text" id="filtroNombre" placeholder="Filtrar por nombre..." />
+    </div>
+
+    <!-- Lista de productos -->
+    <div class="productos-lista" id="listaProductos"></div>
+  </div>
+
+  <script src="admin.js"></script>
+</body>
+</html>
