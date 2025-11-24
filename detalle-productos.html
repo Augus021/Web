@@ -420,6 +420,41 @@
 
             </div>
     </footer>
+
+
+    <script>     /// GUARDAR DATOS DEL USUARIO EN EL LOCALSTORAGE ///
+          // Guardar formulario de soporte
+          window.addEventListener('DOMContentLoaded', () => {
+          const formDetalle = document.querySelector('footer form');
+          const inputNombre = document.getElementById('nombre');
+          const inputEmail = document.getElementById('email');
+          const selectTema = document.getElementById('tema');
+          const textareaMensaje = document.getElementById('mensaje');
+        
+          // Cargar datos guardados
+          inputNombre.value = localStorage.getItem('formNombre') || '';
+          inputEmail.value = localStorage.getItem('formEmail') || '';
+          selectTema.value = localStorage.getItem('formTema') || '';
+          textareaMensaje.value = localStorage.getItem('formMensaje') || '';
+        
+          // Guardar mientras escribe
+          inputNombre.addEventListener('input', () => localStorage.setItem('formNombre', inputNombre.value));
+          inputEmail.addEventListener('input', () => localStorage.setItem('formEmail', inputEmail.value));
+          selectTema.addEventListener('change', () => localStorage.setItem('formTema', selectTema.value));
+          textareaMensaje.addEventListener('input', () => localStorage.setItem('formMensaje', textareaMensaje.value));
+        
+          // Limpiar al enviar
+          formDetalle.addEventListener('submit', (e) => {
+            e.preventDefault();
+            alert('✅ Informe enviado correctamente');
+            localStorage.removeItem('formNombre');
+            localStorage.removeItem('formEmail');
+            localStorage.removeItem('formTema');
+            localStorage.removeItem('formMensaje');
+            formDetalle.reset();
+          });
+        });
+      </script>
     
     <script src="detalle.js"></script>
 

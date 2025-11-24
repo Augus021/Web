@@ -67,15 +67,29 @@
     }
   </style>
 </head>
+
 <body>
-  <div class="container">
-    <h1>_Panel de Administración de Productos_</h1>
+    <div class="container">
+    <h1>🛠️ Panel de Administración de Productos 🛠️</h1>
+
+    <div class="volver">
+      <a href="index.html">← Volver a la Tienda</a>
+    </div>
 
     <!-- Formulario para agregar/editar -->
     <form id="formProducto">
       <input type="hidden" id="id" />
       <input type="text" id="nombre" placeholder="Nombre del producto" required />
       <input type="number" id="precio" placeholder="Precio" required />
+      
+      <select id="categoria" required>
+        <option value="">Seleccione una categoría</option>
+        <option value="CELULARES">Celulares</option>
+        <option value="SMARTWACHES">Smartwatches</option>
+        <option value="AURICULARES">Auriculares</option>
+        <option value="TABLETS">Tablets</option>
+      </select>
+      
       <input type="url" id="imagen" placeholder="URL de la imagen" required />
       <textarea id="descripcion" placeholder="Descripción" rows="4" required></textarea>
       <button type="submit" id="btnGuardar">Agregar Producto</button>
@@ -88,7 +102,9 @@
     </div>
 
     <!-- Lista de productos -->
-    <div class="productos-lista" id="listaProductos"></div>
+    <div class="productos-lista" id="listaProductos">
+      <p style="text-align: center; color: #666;">Cargando productos...</p>
+    </div>
   </div>
 
   <script src="admin.js"></script>
