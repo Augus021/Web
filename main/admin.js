@@ -178,7 +178,7 @@ window.eliminarProducto = async function(recordId) {
     });
 
     if (!response.ok) {
-      throw new Error('Error al eliminar producto');
+      throw new Error('Error al eliminar producto'); 
     }
 
     alert('✅ Producto eliminado exitosamente');
