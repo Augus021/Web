@@ -19,7 +19,7 @@
         font-size: 22px;
         font-weight: bold;
         font-family: Arial, Helvetica, sans-serif;
-        border-radius: 8px;
+        border-radius: 20px;
         text-decoration: none;
         }
 
@@ -37,7 +37,7 @@
             justify-content: left;
             width: 2035px;
             height: 150%;
-            border-radius: 8px;
+            border-radius: 20px;
             box-shadow: 0 0 15px gray;
             margin-top: 30px;
             padding: 30px;
@@ -48,7 +48,7 @@
         flex-direction: row;
         background-image: 
         linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("https://wallpapers.com/images/featured/azul-4k-jyoxxfcdd5cjvvmq.jpg");
-        border-radius: 10px;
+        border-radius: 20px;
         padding: 40px 20px; 
         color: #fff;
         font-family: Arial, Helvetica, sans-serif;
@@ -65,7 +65,7 @@
           gap: 20px;
           margin-right: 50px;
           margin-left: 20px;
-          border-radius: 10px;
+          border-radius: 20px;
           margin-bottom: 15px;
           color: white;
           box-shadow: 3px 3px 20px 3px #30c99b;
@@ -93,7 +93,7 @@
         .soporte input{
           display: flex;
           flex-direction: column;
-          border-radius: 5px;
+          border-radius: 20px;
           width: 100%;
           height: 30px;
           margin-top: 10px;
@@ -107,7 +107,7 @@
             background-color: rgba(0, 0, 0, 0.932);
             padding: 20px 20px;
             font-size: 18px;
-            border-radius: 10px;
+            border-radius: 20px;
             margin-top: 4px;
             margin-bottom: 15px;
             box-shadow: 3px 3px 20px 3px #30c99b;
@@ -134,7 +134,7 @@
         .soporte select, button, label{
           display: flex;
           flex-direction: column;
-          border-radius: 5px;
+          border-radius: 20px;
           width: 100%; 
           height: 30px;
           margin-top: 20px;
@@ -169,7 +169,7 @@
         .soporte textarea{
           width: 100% ;
           height: 100px;
-          border-radius: 5px;
+          border-radius: 20px;
           margin-top: 1px;
         }
 
@@ -198,7 +198,7 @@
         .detalle-img img {
           width: 100%;
           max-width: 450px;
-          border-radius: 8px;
+          border-radius: 20px;
           box-shadow: 0 0 15px gray;
         }
 
@@ -208,7 +208,7 @@
           height: 300px;
           background-color: #fff;
           padding: 20px;
-          border-radius: 8px;
+          border-radius: 20px;
           box-shadow: 0 0 15px gray;
           display: flex;
           flex-direction: column;
@@ -235,7 +235,7 @@
         .detalle-info button {
           background-color: #ffd700;
           border: none;
-          border-radius: 6px;
+          border-radius: 20px;
           padding: 12px;
           font-weight: bold;
           cursor: pointer;
@@ -260,7 +260,7 @@
             gap:40px;
             padding:10px;
             background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),url("https://st.depositphotos.com/17620692/61553/v/450/depositphotos_615535732-stock-illustration-modern-elegant-white-gray-banner.jpg");
-            border-radius: 5px;
+            border-radius: 20px;
             font-family: Arial, sans-serif;
             margin-top: 35px;
             margin-bottom: 30px;
@@ -276,7 +276,7 @@
             justify-content: center;
             padding:10px;
             background-color: #555555c9;
-            border-radius: 5px;
+            border-radius: 20px;
             font-family: Arial, sans-serif;
             margin-top: 35px;
             margin-bottom: 30px;    
@@ -309,7 +309,7 @@
         .retorno {
             background-color: #00000054;
             border-color: #30c99b;
-            border-radius: 6px;
+            border-radius: 15px;
             font-weight: bold;
             cursor: pointer;
             height: 75px;
@@ -327,6 +327,265 @@
         .retorno img {
           width: 60px;
         }
+
+        /* Estilos base para la página de detalle */
+.detalle-prod {
+    display: flex;
+    gap: 30px;
+    padding: 30px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.detalle-img {
+    flex: 1;
+    min-width: 300px;
+    display: flex;
+    justify-content: center;
+}
+
+.detalle-img img {
+    width: 100%;
+    max-width: 450px;
+    border-radius: 20px;
+    box-shadow: 0 0 15px gray;
+}
+
+.detalle-info {
+    flex: 1;
+    min-width: 300px;
+    height: 300px;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 0 0 15px gray;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+/* Estilos para móviles (hasta 600px) */
+@media (max-width: 600px) {
+    main#detalle {
+        width: 95%;
+        padding: 10px;
+        margin: 0;
+        margin-top: 20px;
+    }
+
+    .detalle-prod {
+        padding: 10px;
+        margin: 0;
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    .detalle-img {
+        padding: 10px;
+    }
+
+    .detalle-img img {
+        border-radius: 15px;
+        box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    }
+
+    .detalle-info {
+        padding: 15px;
+        margin: 10px 0;
+        height: auto;
+        min-height: auto;
+    }
+
+    .detalle-info h2 {
+        font-size: 20px;
+        margin: 10px 0;
+    }
+
+    .detalle-info p {
+        font-size: 14px;
+        line-height: 1.5;
+    }
+
+    .detalle-info .h3-prod {
+        font-size: 24px;
+        margin: 15px 0;
+    }
+
+    .detalle-info button {
+        margin-top: 0px !important;
+        margin-bottom: 10px !important;
+        padding: 7px;
+        font-size: 16px;
+        width: 60%;
+    }
+
+
+    /* Header */
+    header {
+        flex-direction: column;
+        text-align: center;
+        padding: 15px;
+        height: auto;
+    }
+
+    .logo h1 {
+        font-size: 32px;
+        margin: 10px 0;
+    }
+
+    /* Beneficios */
+    .beneficios-titulo {
+        width: 90%;
+        margin: 20px auto;
+        padding: 15px;
+    }
+
+    .beneficios {
+        width: 90% !important;
+        flex-direction: column;
+        gap: 15px;
+        padding: 15px;
+    }
+
+    .beneficio {
+        margin: 5px 0;
+    }
+
+    /* Footer */
+    footer {
+        flex-direction: column;
+        padding: 20px;
+    }
+
+    .nosotros, 
+    .soporte {
+        width: 90% !important;
+        margin: 10px 0 !important;
+        padding: 15px;
+        text-align: center;
+    }
+
+    /* Botón de retorno */
+    .retorno {
+        position: fixed;
+        top: 10px;
+        left: 10px;
+        z-index: 1000;
+        background-color: rgba(255, 255, 255, 0.644);
+        padding: 5px;
+        border-radius: 50%;
+        height: 50px;
+        width: 50px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .retorno img {
+        width: 30px;
+        height: 30px;
+    }
+}
+
+/* Estilos para tablets (601px a 992px) */
+@media (min-width: 601px) and (max-width: 992px) {
+    .detalle-prod {
+        padding: 20px;
+    }
+
+    .detalle-img {
+        flex: 1 1 45%;
+        min-width: 45%;
+    }
+
+    .detalle-info {
+        flex: 1 1 45%;
+        min-width: 45%;
+        height: auto;
+        padding: 25px;
+    }
+
+    .detalle-info h2 {
+        font-size: 24px;
+    }
+
+    .detalle-info .h3-prod {
+        font-size: 30px;
+        margin: 20px 0;
+    }
+
+    .detalle-info button {
+        width: 80% !important;
+        margin: 20px auto !important;
+        height: 60px;
+    }
+
+    /* Header */
+    header {
+        padding: 20px;
+    }
+
+    /* Beneficios */
+    .beneficios {
+        width: 90% !important;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        gap: 20px;
+        padding: 20px;
+    }
+
+    .beneficio {
+        flex: 0 1 45%;
+        margin: 10px 0;
+    }
+
+    /* Footer */
+    footer {
+        flex-wrap: wrap;
+        padding: 25px;
+    }
+
+    .nosotros {
+        width: 100% !important;
+        margin-bottom: 20px !important;
+    }
+
+    .soporte {
+        width: 100% !important;
+        margin-left: 0 !important;
+    }
+
+    /* Botón de retorno */
+    .retorno {
+        position: fixed;
+        top: 20px;
+        left: 20px;
+        z-index: 1000;
+    }
+
+    .retorno img {
+        width: 40px;
+        height: 40px;
+    }
+}
+
+/* Ajustes generales para el formulario en móviles */
+@media (max-width: 600px) {
+    .soporte form {
+        padding: 10px;
+    }
+
+    .soporte input,
+    .soporte textarea,
+    .soporte select {
+        font-size: 16px;
+    }
+
+    .soporte button {
+        width: 100% !important;
+    }
+}
+        
     </style>
 
 </head>
@@ -420,6 +679,41 @@
 
             </div>
     </footer>
+
+
+    <script>     /// GUARDAR DATOS DEL USUARIO EN EL LOCALSTORAGE ///
+          // Guardar formulario de soporte
+          window.addEventListener('DOMContentLoaded', () => {
+          const formDetalle = document.querySelector('footer form');
+          const inputNombre = document.getElementById('nombre');
+          const inputEmail = document.getElementById('email');
+          const selectTema = document.getElementById('tema');
+          const textareaMensaje = document.getElementById('mensaje');
+        
+          // Cargar datos guardados
+          inputNombre.value = localStorage.getItem('formNombre') || '';
+          inputEmail.value = localStorage.getItem('formEmail') || '';
+          selectTema.value = localStorage.getItem('formTema') || '';
+          textareaMensaje.value = localStorage.getItem('formMensaje') || '';
+        
+          // Guardar mientras escribe
+          inputNombre.addEventListener('input', () => localStorage.setItem('formNombre', inputNombre.value));
+          inputEmail.addEventListener('input', () => localStorage.setItem('formEmail', inputEmail.value));
+          selectTema.addEventListener('change', () => localStorage.setItem('formTema', selectTema.value));
+          textareaMensaje.addEventListener('input', () => localStorage.setItem('formMensaje', textareaMensaje.value));
+        
+          // Limpiar al enviar
+          formDetalle.addEventListener('submit', (e) => {
+            e.preventDefault();
+            alert('✅ Informe enviado correctamente');
+            localStorage.removeItem('formNombre');
+            localStorage.removeItem('formEmail');
+            localStorage.removeItem('formTema');
+            localStorage.removeItem('formMensaje');
+            formDetalle.reset();
+          });
+        });
+      </script>
     
     <script src="detalle.js"></script>
 
