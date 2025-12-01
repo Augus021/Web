@@ -300,39 +300,91 @@ function filtrarPorCategoria(categoria) {
 // 1. GUARDAR Y CARGAR CARRITO
 function guardarCarrito() {
   localStorage.setItem('carritoProductos', JSON.stringify(carritoProductos));
+
+   try {
+    localStorage.setItem('carritoProductos', JSON.stringify(carritoProductos));
+  } catch (error) {
+    console.error('Error al guardar el carrito:', error);
+    // Opcional: Mostrar mensaje al usuario
+  }
 }
 
 function cargarCarrito() {
-  const carritoGuardado = localStorage.getItem('carritoProductos');
-  if (carritoGuardado) {
-    carritoProductos = JSON.parse(carritoGuardado);
-    actualizarCarrito();
+  try {
+    const carritoGuardado = localStorage.getItem('carritoProductos');
+    if (carritoGuardado) {
+      carritoProductos = JSON.parse(carritoGuardado);
+      // Validar que los datos sean correctos
+      if (!Array.isArray(carritoProductos)) {
+        throw new Error('Formato de carrito inválido');
+      }
+      actualizarCarrito();
+    }
+  } catch (error) {
+    console.error('Error al cargar el carrito:', error);
+    // Opcional: Restablecer a un carrito vacío
+    carritoProductos = [];
+    guardarCarrito();
   }
 }
 
 // 2. GUARDAR BÚSQUEDA
-buscador.addEventListener("input", () => {
-  localStorage.setItem('busquedaActual', buscador.value);
-  const filtro = buscador.value.toLowerCase();
-  
-  // ... (tu código de filtrado existente)
+function guardarBusqueda(termino) {
+    try {
+        // Obtener el historial actual o crear uno nuevo
+        const historial = JSON.parse(localStorage.getItem('historialBusquedas') || '[]');
+        
+        // Evitar duplicados
+        if (!historial.includes(termino)) {
+            // Agregar al inicio del array
+            historial.unshift(termino);
+            
+            // Limitar el historial a las últimas 10 búsquedas
+            const historialLimitado = historial.slice(0, 10);
+            
+            // Guardar en localStorage
+            localStorage.setItem('historialBusquedas', JSON.stringify(historialLimitado));
+        }
+    } catch (error) {
+        console.error('Error al guardar la búsqueda:', error);
+    }
+}
+
+function obtenerHistorialBusquedas() {
+    try {
+        return JSON.parse(localStorage.getItem('historialBusquedas') || '[]');
+    } catch (error) {
+        console.error('Error al cargar el historial de búsquedas:', error);
+        return [];
+    }
+}
+
+// Actualizar el manejador del evento de búsqueda
+buscador.addEventListener("input", (e) => {
+    const termino = e.target.value.trim();
+    if (termino) {
+        guardarBusqueda(termino);
+    }
+    
+    // Tu lógica de filtrado existente
+    const filtro = termino.toLowerCase();
+    // ... resto de tu código de filtrado
 });
 
-function cargarBusqueda() {
-  const busquedaGuardada = localStorage.getItem('busquedaActual');
-  if (busquedaGuardada) {
-    buscador.value = busquedaGuardada;
-    // Simular evento input para aplicar el filtro
-    const evento = new Event('input', { bubbles: true });
-    buscador.dispatchEvent(evento);
-  }
+// Función para mostrar el historial (opcional)
+function mostrarHistorialBusquedas() {
+    const historial = obtenerHistorialBusquedas();
+    console.log('Historial de búsquedas:', historial);
+    // Aquí podrías mostrar el historial en la interfaz si lo deseas
 }
+
 
 // 3. INICIALIZAR AL CARGAR LA PÁGINA
 document.addEventListener('DOMContentLoaded', () => {
   cargarProductosDesdeAirtable();
+  inicializarBuscador();
   cargarCarrito(); // Cargar carrito guardado
-  cargarBusqueda(); // Cargar búsqueda guardada
+  mostrarHistorialBusquedas() // Cargar búsqueda guardada
 });
 
 

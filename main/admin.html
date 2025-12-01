@@ -7,43 +7,106 @@
   <style>
     body {
       font-family: Arial, sans-serif;
-      background-color: #f4f4f4;
+      background-image: url("https://www.shutterstock.com/image-vector/minimalist-wave-line-background-clean-600nw-2435948567.jpg");
       padding: 20px;
     }
+    
+
     .container {
-      max-width: 1000px;
+      display: flex;
+      flex-direction: column;
+      width: 45%;
       margin: auto;
-      background: white;
+      background-color: rgba(88, 87, 87, 0.185);
       padding: 20px;
-      border-radius: 8px;
+      border-radius: 20px;
       box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      border-style:groove;
+      border-color: #30c99b;
     }
     h1 {
       text-align: center;
       margin-bottom: 20px;
       color: #30c99b;
     }
+
+    .retorno a {
+      text-decoration: none;
+      color: black
+    }
+        
+    .retorno {
+      align-self: center;
+      background-color: #00000054;
+      border-color: #30c99b;
+      border-radius: 15px;
+      font-weight: bold;
+      cursor: pointer;
+      height: 75px;
+      width: 8%;
+      font-size: 15px;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    .retorno:hover {
+      background-color:  #28a57f6b;
+      transform: scale(1.2);
+      transition: ease 0.2s;
+    } 
+
+    .retorno img {
+      width: 60px;
+    }
+    
     form {
+      background-color: rgba(88, 87, 87, 0.185);
+      margin-top: 30px;
+      padding: 50px;
+      border-radius: 20px;
       display: flex;
       flex-direction: column;
       gap: 10px;
       margin-bottom: 30px;
     }
-    input, textarea, button {
+    input, textarea, button, select {
       padding: 8px;
       font-size: 16px;
       border: 1px solid #ccc;
-      border-radius: 4px;
+      border-radius: 20px;
     }
     button {
-      background: #ffd700;
+      background: #ffd900b4;
       cursor: pointer;
       font-weight: bold;
     }
     button:hover {
       background: #30c99b;
       color: white;
+      transform: scale(1.1);
+      transition-duration: 0.5s;
     }
+    .btnGuardar {
+      margin-top: 20px;
+      height: 55px;
+      width: 30%;
+      align-self: center;
+      font-size: 20px;
+    }
+
+    #btnCancelar{
+      margin-top: 12px;
+      height: 55px;
+      width: 15%;
+      align-self: center;
+      font-size: 20px;
+      background-color: rgba(255, 0, 0, 0.637);
+      color:white;
+    }
+
+    #btnCancelar:hover{
+      background-color: rgb(255, 4, 4);
+    }
+
     .productos-lista {
       display: grid;
       gap: 15px;
@@ -51,8 +114,8 @@
     .producto-item {
       padding: 15px;
       border: 1px solid #ddd;
-      border-radius: 6px;
-      background: #fafafa;
+      border-radius: 20px;
+      background: #fafafa7e;
     }
     .acciones {
       margin-top: 10px;
@@ -63,17 +126,33 @@
       font-size: 14px;
     }
     .filtro {
-      margin-bottom: 20px;
+      background-color: rgba(88, 87, 87, 0.185);
+      margin-top: 30px;
+      padding: 50px;
+      border-radius: 20px;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      margin-bottom: 5px;
     }
+    .productos-lista{
+      background-color: rgba(88, 87, 87, 0.185);
+      margin-top: 30px;
+      padding: 50px;
+      border-radius: 20px;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      margin-bottom: 30px;
+    }
+
   </style>
 </head>
 
 <body>
     <div class="container">
     <h1>🛠️ Panel de Administración de Productos 🛠️</h1>
-
-    <div class="volver">
-      <a href="index.html">← Volver a la Tienda</a>
+    <button class="retorno"><a href="index.html"> <img src="https://img.icons8.com/?size=100&id=115773&format=png&color=000000"></a></button>
     </div>
 
     <!-- Formulario para agregar/editar -->
@@ -92,8 +171,8 @@
       
       <input type="url" id="imagen" placeholder="URL de la imagen" required />
       <textarea id="descripcion" placeholder="Descripción" rows="4" required></textarea>
-      <button type="submit" id="btnGuardar">Agregar Producto</button>
-      <button type="button" id="btnCancelar" style="display:none;">Cancelar</button>
+      <button type="submit" class="btnGuardar" id="btnGuardar">Agregar Producto</button>
+      <button type="button" id="btnCancelar">Cancelar</button>
     </form>
 
     <!-- Filtro -->
@@ -110,3 +189,4 @@
   <script src="admin.js"></script>
 </body>
 </html>
+
